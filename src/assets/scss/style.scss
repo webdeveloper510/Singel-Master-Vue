@@ -1,0 +1,300 @@
+/*================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+
+.member-badge {
+  width: 20px;
+  min-height: 20px;
+  background: #28c76f;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.member-like {
+  min-height: 20px;
+  margin-top: -65px;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  float: left;
+  color: red;
+  background: #fff;
+
+  border-radius: 20px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-like:hover {
+  color: #fff;
+  background: red;
+}
+
+.footer {
+  background: #283046 !important
+}
+
+.code-toggler {
+  display: none;
+}
+
+.images-wrapper .image {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  background-position: center;
+  background-size: cover;
+
+  &:hover{
+    opacity: 0.5;
+  }
+
+  &.selected {
+    opacity: 0.5;
+  }
+}
+
+.images-wrapper .image:nth-child(3n+0) {
+  margin-right: 0;
+}
+
+.policy-content {
+  span {
+    margin-right: 4px;
+  }
+}
+
+.grey_back {
+  background: #283046 !important;
+}
+
+.model-card-image .card-img-top {
+  height: 240px;
+  object-fit: cover;
+  background: #696484;
+}
+
+#user-profile .profile-header .profile-img-container .model-img {
+  .img-fluid {
+    height: Calc(8.92rem - 0.714rem);
+    width: Calc(8.92rem - 0.714rem);
+    object-fit: cover;
+    object-position: center;
+    @media (max-width: 575.98px) {
+      width: Calc(100px - 0.714rem);
+      height: Calc(100px - 0.714rem);
+    }
+  }
+}
+
+.remove-icon {
+  position: absolute;
+  right: 7px;
+  top: 10px;
+  background: #000000a6;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.user-profile-sidebar{
+  border-left: 1px solid #3b4253;
+}
+
+.dark-layout .modal-card{
+  background: #31375a;
+}
+
+.mb-25{
+  margin-bottom: 0.25rem!important;
+}
+
+.table-reminder{
+  background: #ffeb3b59;
+}
+
+.chat-app-window .active-chat .chat-header.chat-log {
+  height: 120px!important;
+  padding: 1rem!important;
+}
+
+.chat-app-window .user-chats.user-chats-log {
+  position: relative;
+  height: calc(100% - 95px - 90px);
+}
+
+.vue-dropzone{
+  border-radius: 6px!important;
+  border: 1px solid #404656!important;
+  background: #283046!important;
+  &:hover{
+    background: #283046!important;
+  }
+}
+
+.dark-layout .swal2-container .swal2-modal {
+  background-color: #283046;
+}
+
+.custom-radio.custom-control{
+  margin-bottom: 0.4rem;
+}
+
+.app-content.content.chat-application{
+  padding-bottom: 2rem!important;
+}
+
+.app-content{
+  padding-bottom: 2rem!important;
+}
+
+.dropzone-custom-content {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dropzone-custom-title {
+  margin-top: 0;
+  color: #00b782;
+}
+
+.subtitle {
+  color: #314b5f;
+}
+
+.dropzone .dz-message {
+  text-align: center;
+  margin: 4rem 0!important;
+}
+
+.message-time{
+  font-size: smaller;
+  color:yellow!important;
+}
+
+.message-username{
+  font-size: smaller;
+  color:limegreen!important;
+}
+
+.notification-container{
+  overflow: auto;
+  max-height: 200px;
+  .media{
+    padding: 0.9rem 1.28rem;
+    border: none;
+    border-bottom: 1px solid #ebe9f1;
+  }
+}
+
+@media (max-width: 1199.98px){
+  .horizontal-layout .app-content.content {
+    padding: 5.65rem 1.2rem 1rem 1.2rem!important;
+  }
+
+}
+
+@media (min-width: 992px){
+  .moderator-chat .content-right {
+    width: calc(100vw - (100vw - 100%) - 600px);
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-search{
+    margin-top: 1rem;
+  }
+}
+
+[dir] {
+  #user-profile {
+    .profile-header {
+      .profile-img-container {
+        bottom: 3rem !important;
+        .profile-img {
+          border-radius: 50% !important;
+          height: 7.92rem !important;
+          width: 7.92rem !important;
+          overflow: hidden !important;
+          img {
+            display: flex !important;
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+.content-body {
+  #user-profile {
+    .card {
+      .card-body {
+        .profile-header-nav {
+          nav.navbar {
+            background: none !important;
+            margin-top: -6rem !important;
+            ul.nav {
+              position: relative;
+              z-index: 4;
+              button {
+                padding: 16px 30px !important;
+                font-size: 1.3rem !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#profile-info {
+  .order-lg-2 {
+    .card {
+      background-color: #26355c !important;
+      .col-6 {
+        h5 {
+          font-size: 1.5rem !important;
+        }
+        p {
+          font-size: 1.15rem !important;
+        }
+      }
+    }
+  }
+}
+.card.profile-header.mb-2{
+  position: relative;
+}
+
+
+#user-profile .profile-header img {
+    max-height: 14rem;
+    object-fit: cover;
+  }
+
+.card.profile-header.mb-2:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}

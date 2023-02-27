@@ -1,0 +1,43 @@
+.b-form-datepicker,
+.b-form-timepicker {
+  label {
+    line-height: 200%;
+  }
+
+  .btn {
+    &.h-auto {
+      padding: 0.375rem 0.75rem !important;
+    }
+    svg {
+      margin: 0 !important;
+    }
+  }
+  .form-control {
+    min-height: auto !important;
+  }
+  // text alignment in small
+  &.form-control-sm {
+    .form-control-sm {
+      line-height: 1.65;
+    }
+  }
+}
+
+.form-control.date-dropdowns {
+  background: none;
+  border: 1px solid #3b4253;
+  border-radius: 0.357rem;
+  select {
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+    border-right: 1px solid #3b4253;
+    &:last-child {
+      border-right: none;
+    }
+    option {
+      color: #000;
+    }
+  }
+}
