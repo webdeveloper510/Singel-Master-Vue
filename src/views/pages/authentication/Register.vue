@@ -462,6 +462,7 @@ export default {
               console.log(response)
               this.response_show = true
               this.loading = true
+              this.$router.push({ name: 'auth-login' })
             })
             .catch(error => {
               console.log(error)
