@@ -461,7 +461,7 @@ export default {
             .then(response => {
               console.log(response)
               this.response_show = true
-              this.loading = false
+              this.loading = true
             })
             .catch(error => {
               console.log(error)
