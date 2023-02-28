@@ -25,7 +25,7 @@ import useAppConfig from '@core/app-config/useAppConfig'
 import { useWindowSize, useCssVar } from '@vueuse/core'
 
 import store from '@/store'
-// import jwtDefaultConfig from '@core/auth/jwt/jwtDefaultConfig'
+import jwtDefaultConfig from '@core/auth/jwt/jwtDefaultConfig'
 
 const LayoutVertical = () => import('@/layouts/vertical/LayoutVertical.vue')
 const LayoutHorizontal = () => import('@/layouts/horizontal/LayoutHorizontal.vue')
@@ -106,16 +106,15 @@ export default {
   },
   mounted() {
     const userData = JSON.parse(localStorage.getItem('userData'))
-
+    console.log(userData)
     if (userData.role === 'user') {
       this.$store.commit('appConfig/UPDATE_LAYOUT_TYPE', 'horizontal')
     } else {
       this.$store.commit('appConfig/UPDATE_LAYOUT_TYPE', 'vertical')
     }
 
-    // const apiSever = jwtDefaultConfig.socketHost
-    // console.log(JSON.stringify(jwtDefaultConfig.socketHost))
-    const lobbySocket = new WebSocket('ws://192.168.1.32:8080/ws/lobby/')
+    const apiSever = jwtDefaultConfig.socketHost
+    const lobbySocket = new WebSocket(`ws://${apiSever}/ws/lobby/`)
     lobbySocket.onopen = e => {
       console.log('chat socket opened!', e)
     }
