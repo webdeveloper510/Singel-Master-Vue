@@ -1,6 +1,6 @@
 export default {
   // Endpoints
-  socketHost: 'http://213.188.153.139/',
+  socketHost: '213.188.153.139',
   loginEndpoint: 'http://213.188.153.139:8000/auth/token/login/',
   registerEndpoint: 'http://213.188.153.139:8000/auth/users/',
   createModelEndpoint: '/api/moderator/model/',
