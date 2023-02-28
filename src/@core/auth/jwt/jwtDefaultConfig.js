@@ -1,5 +1,6 @@
 export default {
   // Endpoints
+  socketHost: 'singelsajten.se',
   loginEndpoint: 'http://213.188.153.139:8000/auth/token/login/',
   registerEndpoint: 'http://213.188.153.139:8000/auth/users/',
   refreshEndpoint: '/jwt/refresh-token',
