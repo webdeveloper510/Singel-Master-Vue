@@ -67,9 +67,9 @@
             cols="12"
             md="6"
             lg="4"
+            class="date-picker"
           >
-
-            <b-form-group
+          <b-form-group
               label="Födelsedatum"
               label-for="birth-date"
             >
@@ -78,13 +78,25 @@
                 name="First Name"
                 rules="required"
               >
-                <flat-pickr
-                  v-model="userDataInfo.birthday"
-                  class="form-control"
-                  :config="{ dateFormat: 'Y-m-d'}"
-                  placeholder="YYYY-MM-DD"
-                  :state="errors.length > 0 ? false:null"
-                />
+              <dropdown-datepicker
+                ref="datepicker"
+                v-model="birthday"
+                name="birthday"
+                id="birthday"
+                v-bind:allow-past="true"
+                v-bind:allow-future="true"
+                v-bind:min-year="1930"
+                v-bind:max-year="2010"
+                v-bind:value={id:day,id:month,id:year}
+                class="ff date-style"
+                month-format="short"
+                display-format="dmy"
+                year-label="yyyy"
+                month-label="mm"
+                day-label="dd"
+                v-bind:daySuffixes="false"
+                @click.native="method"
+              />
                 <small class="text-danger">{{ errors[0] }}</small>
               </validation-provider>
             </b-form-group>
@@ -420,11 +432,11 @@ import {
 import { avatarText } from '@core/utils/filter'
 import vSelect from 'vue-select'
 import { ref } from '@vue/composition-api'
-import flatPickr from 'vue-flatpickr-component'
 import { required } from '@validations'
 import Ripple from 'vue-ripple-directive'
 import useUsersList from './useUsersList'
 import useJwt from '@/auth/jwt/useJwt'
+import DropdownDatepicker from 'vue-dropdown-datepicker'
 
 export default {
   components: {
@@ -437,11 +449,11 @@ export default {
     BFormInput,
     BForm,
     BFormRadioGroup,
-    flatPickr,
     BFormTextarea,
     vSelect,
     BModal,
     BCardText,
+    DropdownDatepicker,
   },
   directives: {
     Ripple,

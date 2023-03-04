@@ -157,7 +157,8 @@
                       id="birthday"
                       v-bind:allow-past="true"
                       v-bind:allow-future="true"
-                      v-bind:max-year="2023"
+                      v-bind:min-year="1930"
+                      v-bind:max-year="2010"
                       v-bind:value={id:day,id:month,id:year}
                       class="ff date-style"
                       month-format="short"
@@ -165,6 +166,7 @@
                       year-label="yyyy"
                       month-label="mm"
                       day-label="dd"
+                      v-bind:daySuffixes="false"
                       @click.native="method"
                     />
                       <small class="text-danger">{{ errors[0] }}</small>
