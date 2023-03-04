@@ -171,7 +171,7 @@
                     </validation-provider>
                   </b-form-group>
                 </b-col>
-                <b-col cols="6">
+                <!-- <b-col cols="6">
                   <b-form-group
                     label="Län"
                     label-for="county"
@@ -200,7 +200,7 @@
                       :clearable="false"
                     />
                   </b-form-group>
-                </b-col>
+                </b-col> -->
                 <b-col cols="6">
                   <b-form-group
                     label="Kön"
@@ -327,7 +327,7 @@ import {
 // import flatPickr from 'vue-flatpickr-component'
 import { required, email } from '@validations'
 import { togglePasswordVisibility } from '@core/mixins/ui/forms'
-import vSelect from 'vue-select'
+// import vSelect from 'vue-select'
 import store from '@/store/index'
 import useJwt from '@/auth/jwt/useJwt'
 import DropdownDatepicker from 'vue-dropdown-datepicker'
@@ -357,7 +357,7 @@ export default {
     // validations
     ValidationProvider,
     ValidationObserver,
-    vSelect,
+    // vSelect,
   },
   mixins: [togglePasswordVisibility],
   data() {
