@@ -134,6 +134,7 @@ export default {
       useJwt.getCustomers('?new=1')
         .then(response => {
           this.customers = response.data
+          console.log('customers  -->', this.customers)
         }).catch(error => {
           console.log(error)
         })

@@ -192,6 +192,7 @@ export default {
     getLikedList() {
       const query = '?user_like=1&girl_like=0'
       useJwt.getLikedList(query)
+      console.log(useJwt.getLikedList(query))
         .then(response => {
           this.likedGirls = response.data
         })

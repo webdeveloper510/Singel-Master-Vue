@@ -478,7 +478,6 @@ export default {
       height: 'Ej angivet',
       creator: id,
       about_me: 'jjj',
-
     })
 
     const countyList1 = [
