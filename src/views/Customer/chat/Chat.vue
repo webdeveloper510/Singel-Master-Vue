@@ -295,6 +295,7 @@ export default {
         console.log('chat socket closed unexpectedly!', e)
       }
       socket.onmessage = e => {
+        console.log('chat message received')
         const data = JSON.parse(e.data)
         const { message } = data
         activeChat.value.messages.push(message)

@@ -116,7 +116,7 @@ export default class JwtService {
   }
 
   updateModel(id, ...args) {
-    return this.axiosIns.put(`${this.jwtConfig.createModelEndpoint + id}/`, ...args)
+    return this.axiosIns.put(`${this.jwtConfig.updateModelEndpoint + id}/`, ...args)
   }
 
   getModels(query) {
@@ -128,7 +128,7 @@ export default class JwtService {
   }
 
   getModelDetail(id) {
-    return this.axiosIns.get(`${this.jwtConfig.createModelEndpoint + id}/`)
+    return this.axiosIns.get(`${this.jwtConfig.getmodelDetailview + id}`)
   }
 
   getModelPublicPhotos(id) {

@@ -11,7 +11,7 @@
       <div class="profile-img-container d-flex align-items-center">
         <div class="profile-img model-img">
           <b-img
-            :src="require('@/assets/images/portrait/small/avatar-s-20.jpg')"
+            :src=headerData.photo
             rounded
             fluid
             alt="profile photo"
@@ -20,7 +20,7 @@
         <!-- profile title -->
         <div class="profile-title ml-3">
           <h2 class="text-white">
-            {{ headerData.username }} ({{ headerData.age }})
+            {{ headerData.first_name }} {{ headerData.last_name }}
           </h2>
           <p class="text-white">
             {{ headerData.gender }}
@@ -137,6 +137,7 @@ export default {
   data() {
     return {
       userData: JSON.parse(localStorage.getItem('userData')),
+      imagesrc: '@/assets/images/avatars/default_model.png',
     }
   },
   computed: {

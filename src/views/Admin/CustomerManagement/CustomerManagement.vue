@@ -87,7 +87,7 @@
       >
         <div
           v-for="(value, key) in selectedCustomer"
-          :key="key"
+          :key=key
           class="col-6 mt-2"
         >
           <h5 class="text-capitalize mb-75">

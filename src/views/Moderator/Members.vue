@@ -126,7 +126,7 @@
         xl="3"
       >
         <b-card
-          :img-src="item.avatar"
+          :img-src="item.photo"
           img-alt="Card image cap"
           img-top
           style="position: relative"

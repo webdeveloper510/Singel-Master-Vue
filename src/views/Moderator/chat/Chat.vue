@@ -276,7 +276,7 @@ export default {
     const chatInputMessage = ref('')
     const timer = ref({ id: 0 })
     const openChatOfContact = chatId => {
-      // Reset send message input value
+      // Reset  input value
       chatInputMessage.value = ''
 
       store.dispatch('app-chat/getChat', { chatId })

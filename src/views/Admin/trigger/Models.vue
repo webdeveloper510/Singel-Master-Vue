@@ -337,6 +337,7 @@ export default {
     }
 
     useJwt.getModels(queryString)
+    console.log("queryString" , queryString)
       .then(response => {
         this.customers = response.data
       }).catch(error => {
