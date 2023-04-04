@@ -13,8 +13,8 @@ export default {
   userLikeEndpoint: 'http://singelsajten.se:8000/api/moderator/user-like/',
   randomGirlEndpoint: 'http://singelsajten.se:8000/api/moderator/random-girl/',
   createChatEndpoint: 'http://singelsajten.se:8000/api/chat/detail/',
-  girlLikeListEndpoint: 'http://singelsajten.se:8000/api/moderator/user-like/',
-  createModeratorEndpoint: 'http://singelsajten.se:8000/api/moderator/model/',
+  girlLikeListEndpoint: 'http://singelsajten.se:8000/api/admin/girl-like/',
+  createModeratorEndpoint: 'http://singelsajten.se:8000/api/admin/moderator/',
   getLobbiesEndpoint: 'http://singelsajten.se:8000/api/chat/assign/',
   assignChatEndpoint: 'http://singelsajten.se:8000/api/chat/check_chat_assign/',
   massTriggerEndpoint: 'http://singelsajten.se:8000/api/admin/mass-trigger/',
@@ -23,6 +23,9 @@ export default {
   addCoinEndpoint: 'http://singelsajten.se:8000/api/admin/customer/add-coin/',
   deleteCustomerEndpoint: 'http://singelsajten.se:8000/api/admin/customer/delete/',
   updateCoinEndpoint: 'http://singelsajten.se:8000/api/chat/update-coin/',
+  moderatorSettingEndpoint: 'http://singelsajten.se:8000/api/admin/moderator-setting/',
+  girlMatchListEndpoint: 'http://singelsajten.se:8000/api/admin/girl-match/',
+  uploadProfilePhotoEndpoint: 'http://singelsajten.se:8000/api/moderator/model-photo/',
   // This will be prefixed in authorization header with token
   // e.g. Authorization: Bearer <token>
   tokenType: 'Token',

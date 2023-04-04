@@ -10,34 +10,32 @@
           />
           <span class="d-none d-sm-inline">Liked</span>
         </template>
-
         <b-table
           :fields="likedFields"
           :items="likedGirls"
           responsive
           class="mb-0"
         >
-          <template #cell(user)="user">
+          <template #cell(user)="data">
             <span
               class="text-nowrap"
             >
               <b-avatar
-                :src="user.item.user.avatar"
+                :src="data.item.user.avatar"
                 class="mr-1"
               />
-              <span class="text-nowrap">{{ user.item.user.username }}</span>
+              <span class="text-nowrap">{{ data.item.user.username }}</span>
             </span>
           </template>
-
-          <template #cell(girl)="user">
+          <template #cell(girl)="data">
             <span
               class="text-nowrap"
             >
               <b-avatar
-                :src="user.item.girl.avatar"
+                :src="data.item.girl.avatar"
                 class="mr-1"
               />
-              <span class="text-nowrap">{{ user.item.girl.username }}</span>
+              <span class="text-nowrap">{{ data.item.girl.username }}</span>
             </span>
           </template>
 
@@ -126,7 +124,6 @@
         Matched Customers
       </h3>
       <div>
-
         <div
           v-for="item in matchCustomers"
           :key="item.id"
@@ -192,9 +189,10 @@ export default {
     getLikedList() {
       const query = '?user_like=1&girl_like=0'
       useJwt.getLikedList(query)
-      console.log(useJwt.getLikedList(query))
+      // console.log(useJwt.getLikedList(query))
         .then(response => {
           this.likedGirls = response.data
+          console.log('THIS LIKED GIRLS', this.likedGirls)
         })
     },
     getMatchedList() {
@@ -220,6 +218,7 @@ export default {
       useJwt.getLikedList(query)
         .then(response => {
           this.matchCustomers = response.data
+          console.log('matchCustomers matchCustomers matchCustomers', this.matchCustomers)
         })
     },
     rowClass(item, type) {
