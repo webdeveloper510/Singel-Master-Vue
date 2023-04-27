@@ -211,7 +211,7 @@ export default {
     const token = localStorage.getItem('accessToken')
     return {
       dropzoneOptions: {
-        url: 'http://singelsajten.se/api/chat/upload-photo/',
+        url: 'http://127.0.0.1/api/chat/upload-photo/',
         thumbnailWidth: 150,
         maxFilesize: 10.0,
         maxFiles: 1,

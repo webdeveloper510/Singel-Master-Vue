@@ -7,9 +7,6 @@
       <b-table
         :fields="fields"
         :items="items"
-        responsive
-        class="mb-0"
-        :tbody-tr-class="rowClass"
       >
         <template #cell(customer)="client">
           <span
@@ -91,9 +88,6 @@
       <b-table
         :fields="fields"
         :items="assignedItems"
-        responsive
-        class="mb-0"
-        :tbody-tr-class="rowClass"
       >
         <template #cell(customer)="client">
           <span
@@ -190,6 +184,15 @@
     </b-modal>
   </div>
 </template>
+
+<style>
+table tr td {
+  border-right: 1px solid #fff;
+}
+table tr td:last-child {
+  border-right: none;
+}
+</style>
 
 <script>
 import BCardCode from '@core/components/b-card-code/BCardCode.vue'

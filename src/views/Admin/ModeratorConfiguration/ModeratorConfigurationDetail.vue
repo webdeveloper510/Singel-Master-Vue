@@ -167,6 +167,7 @@ export default {
     this.$http.get('/ecommerce/data')
       .then(response => {
         this.data = response.data
+        console.log(this.data)
       })
     this.moderator = this.$route.params.moderatorUsername
     this.fetchAffiliate()
@@ -182,7 +183,7 @@ export default {
       return total
     },
     fetchAffiliate() {
-      useJwt.getTransaction(this.moderator, this.year, this.month)
+      useJwt.getTransaction(this.moderator, this.month, this.year)
         .then(response => {
           this.transactions = response.data
           useJwt.getAffiliateList('single', this.moderator)

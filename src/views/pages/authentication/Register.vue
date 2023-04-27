@@ -256,7 +256,7 @@
                     </b-link>
                     .
                     Jag godkänner också att få kontouppdateringar, nyhetsbrev och meddelanden från andra medlemmar,
-                    skickade från Singelsajten.se.
+                    skickade från 127.0.0.1.
                   </b-form-checkbox>
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>

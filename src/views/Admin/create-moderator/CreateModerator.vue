@@ -152,7 +152,7 @@ export default {
         if (success) {
           useJwt.createModerator({
             username: this.username,
-            email: `${this.username}@singelsajten.se`,
+            email: `${this.username}@127.0.0.1.com`,
             password: this.password,
           })
             .then(response => {

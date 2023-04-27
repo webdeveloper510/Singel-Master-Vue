@@ -13,7 +13,7 @@
       >
         <affiliate-revenue :data="data.statisticsItems" />
       </b-col>
-      <b-col xl="6">
+      <b-col xl="12">
         <affiliate-payment :data="transactions" />
       </b-col>
       <b-col xl="6">
@@ -57,6 +57,7 @@ export default {
     this.$http.get('/ecommerce/data')
       .then(response => {
         this.data = response.data
+        console.log(this.data)
       })
 
     useJwt.getTransaction()

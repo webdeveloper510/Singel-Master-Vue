@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <b-card-code
     title="Affiliated Customers"
     no-body
@@ -73,4 +73,4 @@ export default {
     },
   },
 }
-</script>
+</script> -->
