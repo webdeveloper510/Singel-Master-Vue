@@ -941,7 +941,7 @@
             <span style=" ">
               <span>att</span> <span>förhindra</span> <span>obehörig</span> <span>åtkomst</span> <span>har</span> vi <span>vidtagit</span> <span>lämpliga</span> <span>skyddsåtgärder</span> <span>som</span> <span>skyddar</span>
               <span>och</span> <span>säkrar</span> de <span>uppgifter</span> du <span>har</span> <span>tillhandahållit</span>. <span>En</span> <span>ansvarsfull</span> <span>dataskyddsansvarig</span> <span>har</span> <span>utsetts</span>,
-              <span>som</span> <span>kan</span> <span>nås</span> via support@127.0.0.1
+              <span>som</span> <span>kan</span> <span>nås</span> via support@singelsajten.se
             </span>
             <b>
               <span style="font-size: 15pt;"><o:p /></span>
@@ -964,8 +964,8 @@
 
           <p style="margin-top: 12pt; margin-right: 0in; margin-bottom: 12pt; margin-left: 0in; line-height: normal;">
             <span style="">
-              Cookie <span>Policyn</span> <span>för</span> <span>denna</span> <span>webbplats</span> (127.0.0.1) <span>förklarar</span> <span>hur</span> cookies <span>placeras</span> <span>på</span>
-              <span>webbplatsen</span> 127.0.0.1 <span><span style="">och</span></span><span style=""> <span>dess</span> partners</span> <span>samt</span> <span>hur</span> information <span>avläses</span>
+              Cookie <span>Policyn</span> <span>för</span> <span>denna</span> <span>webbplats</span> (singelsajten.se) <span>förklarar</span> <span>hur</span> cookies <span>placeras</span> <span>på</span>
+              <span>webbplatsen</span> singelsajten.se <span><span style="">och</span></span><span style=""> <span>dess</span> partners</span> <span>samt</span> <span>hur</span> information <span>avläses</span>
               <span>från</span> din <span>dator</span>, <span>surfplatta</span>, <span>mobiltelefon</span> <span>och</span>/<span>eller</span> <span>annan</span> <span>kringutrustning</span>. Denna <span>cookiepolicy</span> anger
               <span>även</span> <span>ändamålet</span> med <span>insamlingen</span> av information. Vi <span>rekommenderar</span> <span>därför</span> <span>att</span> du <span>läser</span> <span>igenom</span> <span>denna</span>
               <span>cookiepolicy</span> <span>noggrant</span>.
@@ -979,19 +979,19 @@
 
           <p style="margin-top: 12pt; margin-right: 0in; margin-bottom: 12pt; margin-left: 0in; line-height: normal;">
             <span style="">
-              Cookies <span>är</span> <span>små</span> <span>bitar</span> av 127.0.0.1 – information <span>som</span> <span>skickas</span> till din <span>webbläsare</span> <span>när</span> du <span>besöker</span>
+              Cookies <span>är</span> <span>små</span> <span>bitar</span> av singelsajten.se – information <span>som</span> <span>skickas</span> till din <span>webbläsare</span> <span>när</span> du <span>besöker</span>
               <span>webbplatsen</span> <span>och</span> <span>som</span> sedan <span>lagras</span> <span>på</span> <span>hårddisken</span> <span>eller</span> <span>i</span> <span>minnet</span> <span>på</span>
               <span>kringutrustningen</span>. <span>Webbläsaren</span> <span>kan</span> sedan ta del av <span>denna</span> information <span>vid</span> <span>efterföljande</span> <span>besök</span> <span>på</span>
               <span>webbplatsen</span>. De cookies <span>som</span> <span>placeras</span> via <span>webbplatsen</span> <span>kan</span> <span>inte</span> <span>skada</span> din <span>kringutrustning</span> <span>eller</span>
               <span>filerna</span> <span>som</span> <span>lagras</span> <span>på</span> <span>utrustningen</span>. Denna <span>sajt</span> <span>använder</span> <span><span style="">själv</span></span>
               <span style=""> <span>läsande</span> cookies.</span> Inga <span>tredje</span> <span>parter</span> <span>är</span> <span>inblandade</span> <span>i</span> <span>placeringen</span> <span>eller</span>
-              <span>avläsning</span> av dessa <span>så</span> <span>kallande</span> <span>förstahandscookies</span>, 127.0.0.1 <span>placerar</span> <span>i</span> <span>första</span> hand
+              <span>avläsning</span> av dessa <span>så</span> <span>kallande</span> <span>förstahandscookies</span>, singelsajten.se <span>placerar</span> <span>i</span> <span>första</span> hand
               <span style=""> <span>funktionella</span> cookies.</span> <span>Sådana</span> cookies <span>behövs</span> <span>för</span> <span>att</span> <span>kunna</span> <span>tillhandahålla</span> den <span>önskade</span>
               <span>tjänsten</span>. Till <span>exempel</span> <span>säkerställer</span> <span>funktionella</span> cookies <span>att</span> du, <span>när</span> du <span>har</span> <span>godkänt</span> <span>användningen</span> av
               cookies, <span>inte</span> <span>längre</span> ser <span>skärmen</span> <span>som</span> <span>indikerar</span> <span>att</span> <span>webbplatsen</span> <span>använder</span> cookies. Dessa <span>funktionella</span> cookies
-              <span>omfattas</span> <span>inte</span> av <span>lagar</span> <span>och</span> 127.0.0.1 <span>är</span> <span>därför</span> <span>inte</span> <span>skyldiga</span> <span>att</span> <span>informera</span> dig om
+              <span>omfattas</span> <span>inte</span> av <span>lagar</span> <span>och</span> singelsajten.se <span>är</span> <span>därför</span> <span>inte</span> <span>skyldiga</span> <span>att</span> <span>informera</span> dig om
               <span>detta</span>. Vi <span>gör</span> <span>emellertid</span> <span>detta</span> <span>ändå</span> <span>för</span> <span>att</span> vi <span>vill</span> <span>vara</span> <span>transparenta</span> <span>när</span> det
-              <span>gäller</span> <span>användningen</span> av <span>alla</span> cookies. <span>Utöver</span> <span>funktionella</span> cookies <span>placerar</span> 127.0.0.1
+              <span>gäller</span> <span>användningen</span> av <span>alla</span> cookies. <span>Utöver</span> <span>funktionella</span> cookies <span>placerar</span> singelsajten.se
               <span style=""> cookies <span>som</span> <span>kommer</span> <span>ihåg</span> <span>dina</span> <span>sökresultat</span> under <span>en</span> session. </span>Dessa <span>sessionsbaserade</span> cookies
               <span>underlättar</span> <span>användningen</span> av <span>webbplatsen</span>. <span>Sådana</span> cookies <span>raderas</span> <span>när</span> du <span>avslutar</span> <span>sessionen</span>.
             </span>
@@ -1006,10 +1006,10 @@
             <span><span style="">För</span></span>
             <span style="">
               <span>insamling</span> av <span>webbstatistik</span> om <span>användningen</span> av <span>och</span> <span>besöken</span> <span>på</span> <span>webbplatsen</span> <span><span style="">använder</span></span>
-              <span style=""> 127.0.0.1 sig av Google Analytics <span>som</span> <span>tredje</span> part.</span> De <span>placerar</span> <span>en</span> permanent cookie <span>på</span> din <span>kringutrustning</span>,
+              <span style=""> singelsajten.se sig av Google Analytics <span>som</span> <span>tredje</span> part.</span> De <span>placerar</span> <span>en</span> permanent cookie <span>på</span> din <span>kringutrustning</span>,
               <span>på</span> <span>grundval</span> av <span>vilken</span> din <span>användning</span> av <span>webbplatsen</span> <span>registreras</span>.
-              <span style="">Denna data <span>analyseras</span> sedan av Google <span>och</span> <span>resultaten</span> <span>tillhandahålls</span> 127.0.0.1</span>. <span>På</span> <span>så</span> vis
-              <span>får</span> 127.0.0.1 <span>insikt</span> <span>i</span> <span>hur</span> <span>webbplatsen</span> <span>används</span> <span>och</span> <span>kan</span>, med <span>grundval</span> <span>på</span> den
+              <span style="">Denna data <span>analyseras</span> sedan av Google <span>och</span> <span>resultaten</span> <span>tillhandahålls</span> singelsajten.se</span>. <span>På</span> <span>så</span> vis
+              <span>får</span> singelsajten.se <span>insikt</span> <span>i</span> <span>hur</span> <span>webbplatsen</span> <span>används</span> <span>och</span> <span>kan</span>, med <span>grundval</span> <span>på</span> den
               <span>informationen</span>, <span>göra</span> <span>justeringar</span> <span>på</span> <span>webbplatsen</span> <span>eller</span> av <span>dess</span> <span>tjänster</span> om <span>så</span> <span>krävs</span>. Google
               <span>kan</span> <span>komma</span> <span>att</span> <span>tillhandahålla</span> <span>tredje</span> <span>parter</span> med <span>denna</span> information om de <span>är</span> <span>juridiskt</span> <span>skyldiga</span>
               <span>att</span> <span>göra</span> det <span>och</span>/<span>eller</span> om <span>tredje</span> <span>parter</span> <span>behandlar</span> <span>informationen</span> <span>för</span> Googles <span>räkning</span>.
@@ -1039,7 +1039,7 @@
           </p>
           <p>
             <span style="font-size: 8pt; font-family: 'Arial', sans-serif;">
-              Det <span>medgivande</span> du <span>har</span> <span>gett</span> 127.0.0.1 <span>angående</span> <span>utplaceringen</span> <span>och</span> <span>avläsningen</span> av cookies <span>kan</span> du <span>dra</span>
+              Det <span>medgivande</span> du <span>har</span> <span>gett</span> singelsajten.se <span>angående</span> <span>utplaceringen</span> <span>och</span> <span>avläsningen</span> av cookies <span>kan</span> du <span>dra</span>
               <span>tillbaka</span> <span>när</span> <span>som</span> <span>helst</span> <span>genom</span> <span>att</span> <span>ställa</span> in <span>webbläsaren</span> <span>på</span> <span>att</span> <span>inte</span>
               <span>acceptera</span> cookies <span>och</span>/<span>eller</span> <span>genom</span> <span>att</span> ta bort <span>alla</span> cookies <span>som</span> redan <span>har</span> <span>placerats</span> <span>ut</span>
               <span>på</span> <span>webbläsaren</span>. <span>Här</span> <span>kan</span> du <span>läsa</span> om <span>hur</span> du <span>kan</span> ta bort <span>olika</span> <span>typer</span> av cookies <span>på</span> de
@@ -1062,7 +1062,7 @@
             <span style="font-size: 8pt; ">
               Det <span>kan</span> <span>hända</span> <span>att</span> <span>informationen</span> <span>som</span> <span>samlats</span> in med <span>hjälp</span> av cookies <span>eller</span> <span>andra</span> <span>avläsningar</span>
               <span>innehåller</span> <span>personuppgifter</span>. Om <span>så</span> <span>är</span> <span>fallet</span> <span>gäller</span> <span>sekretesspolicyn</span> (<span>detta</span> <span>dokument</span>)
-              <span>för</span> 127.0.0.1 <span>för</span> <span>behandlingen</span> av <span>sådana</span> <span>personuppgifter</span>.
+              <span>för</span> singelsajten.se <span>för</span> <span>behandlingen</span> av <span>sådana</span> <span>personuppgifter</span>.
             </span>
 
           </p>

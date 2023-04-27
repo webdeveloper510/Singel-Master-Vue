@@ -9,7 +9,7 @@ export default {
     fetchChatsAndContacts() {
       return new Promise((resolve, reject) => {
         axios
-          .get('http://127.0.0.1:8000/api/chat/')
+          .get('http://singelsajten.se:8000/api/chat/')
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -25,7 +25,7 @@ export default {
     getChat(ctx, { chatId }) {
       return new Promise((resolve, reject) => {
         axios
-          .get(`http://127.0.0.1:8000/api/chat/detail/${chatId}/`)
+          .get(`http://singelsajten.se:8000/api/chat/detail/${chatId}/`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
