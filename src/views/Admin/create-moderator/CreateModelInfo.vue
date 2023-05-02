@@ -3,7 +3,7 @@
     <validation-observer ref="createModelForm">
       <b-form>
         <h2 class="mb-2">
-          Model Information
+          Sub Admin Information
         </h2>
         <b-row>
           <!-- Field: First Name -->

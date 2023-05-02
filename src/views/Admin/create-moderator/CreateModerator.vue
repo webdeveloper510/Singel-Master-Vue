@@ -35,6 +35,24 @@
                 </validation-provider>
               </b-form-group>
               <b-form-group
+                label="Email Address"
+                label-for="email"
+              >
+                <validation-provider
+                  #default="{ errors }"
+                  name="email"
+                  vid="email"
+                  rules="required"
+                >
+                  <b-form-input
+                    id="email"
+                    v-model="email"
+                    :state="errors.length > 0 ? false:null"
+                  />
+                  <small class="text-danger">{{ errors[0] }}</small>
+                </validation-provider>
+              </b-form-group>
+              <b-form-group
                 label-for="register-password"
                 label="Password"
               >
@@ -68,6 +86,13 @@
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>
               </b-form-group>
+              <div>
+                <select v-model="selectedOption" class="form-control-merge form-control">
+                  <option value="">Select an option</option>
+                  <option value="moderator">Moderator</option>
+                  <option value="affiliate">Affiliate</option>
+                </select>
+              </div>
               <b-button
                 class="mt-2"
                 variant="primary"
@@ -125,6 +150,7 @@ export default {
     BFormGroup,
     BRow,
     BCol,
+    // BDropdown,
     BInputGroup,
     BInputGroupAppend,
     BButton,
@@ -135,8 +161,10 @@ export default {
   data() {
     return {
       username: null,
+      email: null,
       password: null,
       password2: null,
+      selectedOption: '',
       required,
       modalShow: false,
     }
@@ -152,8 +180,9 @@ export default {
         if (success) {
           useJwt.createModerator({
             username: this.username,
-            email: `${this.username}@singelsajten.se.com`,
+            email: this.email,
             password: this.password,
+            role: this.selectedOption,
           })
             .then(response => {
               console.log(response)

@@ -8,6 +8,7 @@ import pages from './routes/pages'
 import customer from './routes/customer'
 import moderator from './routes/moderator'
 import admin from './routes/admin'
+import affiliate from './routes/affiliate'
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,7 @@ const router = new VueRouter({
     ...moderator,
     ...pages,
     ...admin,
+    ...affiliate,
     {
       path: '*',
       redirect: 'error-404',

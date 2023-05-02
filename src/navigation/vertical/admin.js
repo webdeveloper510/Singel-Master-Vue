@@ -70,4 +70,14 @@ export default [
     route: 'admin-flirt-handling',
     icon: 'HeartIcon',
   },
+  {
+    title: 'Sub Admin Management',
+    route: 'admin-create-management',
+    icon: 'GridIcon',
+  },
+  {
+    title: 'Sub Admin',
+    route: 'admin-create-subadmin',
+    icon: 'UserCheckIcon',
+  },
 ]

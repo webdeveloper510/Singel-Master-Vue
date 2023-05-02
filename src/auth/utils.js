@@ -24,5 +24,6 @@ export const getHomeRouteForLoggedInUser = userRole => {
   if (userRole === 'admin') return { name: 'moderator-lobby' }
   if (userRole === 'moderator') return { name: 'moderator-lobby' }
   if (userRole === 'user') return { name: 'members' }
+  if (userRole === 'affiliate') return { name: 'moderator-lobby' }
   return { name: 'auth-login' }
 }

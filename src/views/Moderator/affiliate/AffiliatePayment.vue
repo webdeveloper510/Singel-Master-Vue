@@ -60,6 +60,9 @@
   </b-card-code>
 </template>
 <style>
+  .filters {
+    padding-bottom: 5rem !important;
+  }
   .filters input[type=checkbox] {
       position: relative;
       cursor: pointer;

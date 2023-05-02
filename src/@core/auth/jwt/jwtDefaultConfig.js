@@ -16,7 +16,7 @@ export default {
   girlLikeListEndpoint: 'http://singelsajten.se:8000/api/admin/girl-like/',
   createModeratorEndpoint: 'http://singelsajten.se:8000/api/admin/moderator/',
   getLobbiesEndpoint: 'http://singelsajten.se:8000/api/chat/message/',
-  assignChatEndpoint: 'http://singelsajten.se:8000/api/chat/',
+  assignChatEndpoint: 'http://singelsajten.se:8000/api/chat/message/',
   massTriggerEndpoint: 'http://singelsajten.se:8000/api/admin/mass-trigger/',
   affiliateEndpoint: 'http://singelsajten.se:8000/api/moderator/affiliate/',
   getmodelDetailview: 'http://singelsajten.se:8000/api/moderator/models/',

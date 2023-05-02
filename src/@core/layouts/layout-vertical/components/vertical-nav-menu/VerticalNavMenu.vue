@@ -86,6 +86,11 @@
         :items="navMenuItemsAdmin"
         class="navigation navigation-main"
       />
+      <vertical-nav-menu-items
+        v-else-if="userData.role === 'affiliate'"
+        :items="navMenuItemsAffiliate"
+        class="navigation navigation-main"
+      />
     </vue-perfect-scrollbar>
     <!-- /main menu content-->
   </div>
@@ -95,6 +100,7 @@
 import navMenuItems from '@/navigation/vertical'
 import navMenuItemsModerator from '@/navigation/vertical/moderator'
 import navMenuItemsAdmin from '@/navigation/vertical/admin'
+import navMenuItemsAffiliate from '@/navigation/vertical/affiliate'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 import { BLink, BImg } from 'bootstrap-vue'
 import { provide, computed, ref } from '@vue/composition-api'
@@ -151,6 +157,7 @@ export default {
     return {
       navMenuItems,
       navMenuItemsAdmin,
+      navMenuItemsAffiliate,
       navMenuItemsModerator,
       perfectScrollbarSettings,
       isVerticalMenuCollapsed,

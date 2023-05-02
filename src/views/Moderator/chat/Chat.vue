@@ -15,46 +15,34 @@
         v-else
         class="active-chat"
       >
-        <!-- Chat Navbar -->
-        <div class="chat-navbar">
-          <header
-            v-if="activeChat"
-            class="chat-header chat-log"
-          >
-            <b-form-textarea
+      <b-form-textarea
+              class="textarea"
               v-model="activeChat.long_log"
               placeholder="Write logs"
               @mouseout="updateChatLog"
             />
-
-            <!-- Avatar & Name -->
-            <div class="d-none align-items-center d-none">
-
-              <!-- Toggle Icon -->
-              <div class="sidebar-toggle d-block d-lg-none mr-1">
-                <feather-icon
-                  icon="MenuIcon"
-                  class="cursor-pointer"
-                  size="21"
-                  @click="mqShallShowLeftSidebar = true"
-                />
-              </div>
-
-              <b-avatar
-                size="36"
-                :src="activeChat.girl.avatar"
-                class="mr-1 cursor-pointer badge-minimal"
-                badge
-                :badge-variant="resolveAvatarBadgeVariant(activeChat.girl.status)"
-              />
-              <h6 class="mb-0">
-                {{ activeChat.girl.username }}
-              </h6>
-            </div>
-          </header>
+      <div class="conversation-start">
+        <p>Conversation Started: 24 March 2023 at 01:35 PM</p>
+        <div class="start-votes">
+          <span class="vote-time">289 sec</span>
+          <div class="votes">
+            <button class="down">34</button>
+            <button class="up">36</button>
+            <button>Hold</button>
+          </div>
         </div>
-
-        <!-- User Chat Area -->
+        <div class="votes-area">
+          <b-form-textarea
+              class="textarea"
+              placeholder="Type your message here"
+          />
+          <div class="buttons">
+            <button class="send">Send Message</button>
+            <button class="chat">Quick Chat</button>
+            <button class="problem">Problem</button>
+          </div>
+        </div>
+      </div>
         <vue-perfect-scrollbar
           ref="refChatLogPS"
           :settings="perfectScrollbarSettings"
@@ -165,12 +153,104 @@
   </div>
 </template>
 
+<style>
+.chat-content {
+  width: 100%;
+}
+textarea {
+  resize: none;
+}
+
+[dir] .chat-application .chat-profile-sidebar .profile-sidebar-area,
+[dir] .chat-application .user-profile-sidebar .user-profile-sidebar-area{
+  padding: 0 1rem 1.5rem !important;
+}
+
+.form-row.form-group.mb-25 {
+  margin-bottom: .75rem !important;
+}
+
+.conversation-start {
+  padding: 1rem;
+}
+
+.conversation-start .start-votes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.conversation-start .start-votes .vote-time {
+  border: 1px solid #fff;
+  padding: 5px;
+  margin: 0;
+}
+
+.conversation-start .start-votes .votes button {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  margin-right: 10px;
+  padding: 5px 12px;
+  border-radius: 3px;
+}
+
+.conversation-start .start-votes .votes button.down {
+  color: red;
+}
+
+.conversation-start .start-votes .votes button.up {
+  color: green;
+}
+
+.conversation-start .start-votes .votes button:last-child {
+  margin-right: 0;
+}
+
+.conversation-start .votes-area .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.conversation-start .votes-area .buttons button {
+  width: 32%;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.conversation-start .votes-area .buttons button.send {
+  background-color: green;
+}
+
+.conversation-start .votes-area .buttons button.chat {
+  background-color: gray;
+}
+
+.conversation-start .votes-area .buttons button.problem {
+  background-color: red;
+}
+
+textarea.textarea{
+  min-height: 150px;
+}
+</style>
+
 <script>
 import {
   ref, onUnmounted, nextTick,
 } from '@vue/composition-api'
 import {
-  BAvatar, BForm, BInputGroup, BFormInput, BButton, BModal, VBModal, BCard, BCardTitle, BFormTextarea,
+  BForm, BInputGroup, BFormInput, BButton, BModal, VBModal, BCard, BCardTitle, BFormTextarea,
 } from 'bootstrap-vue'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 // import { formatDate } from '@core/utils/filter'
@@ -190,7 +270,7 @@ export default {
   components: {
 
     // BSV
-    BAvatar,
+    // BAvatar,
     // BDropdown,
     // BDropdownItem,
     BForm,

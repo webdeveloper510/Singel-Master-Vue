@@ -1,4 +1,4 @@
-<template>
+<template class="template-lobby">
   <div>
     <b-card-code
       title="Lobby"

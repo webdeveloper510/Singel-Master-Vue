@@ -75,7 +75,7 @@
         <!-- Message Input -->
         <b-form
           class="chat-app-form"
-          @submit.prevent="sendMessage"
+          @submit.prevent="sendMessage()"
         >
           <b-input-group class="input-group-merge form-send-message mr-1">
             <b-form-input
@@ -93,6 +93,7 @@
           <b-button
             variant="primary"
             type="submit"
+            @click="sendMessage()"
           >
             Skicka
           </b-button>
@@ -316,7 +317,11 @@ export default {
       mqShallShowLeftSidebar.value = false
     }
     const sendMessage = () => {
-      if (!chatInputMessage.value) return
+      console.log('HERE')
+      if (!chatInputMessage.value) {
+        return
+      }
+      console.log('here', chatInputMessage.value)
       /* coin check */
       const coin = store.state.appConfig.userData.coins
 
@@ -343,6 +348,7 @@ export default {
         mySocket.value.send(
           JSON.stringify(payload),
         )
+        console.log(mySocket)
         useJwt.updateCoin()
           .then(result => {
             store.commit('appConfig/UPDATE_USERDATA', result.data)

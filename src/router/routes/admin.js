@@ -74,5 +74,14 @@ export default [
       contentClass: 'chat-application moderator-chat',
     },
   },
-
+  {
+    path: '/adminUser/create-subadmin',
+    name: 'admin-create-subadmin',
+    component: () => import('@/views/Admin/create-SubAdmin/createSubadmin.vue'),
+  },
+  {
+    path: '/adminUser/subadmin-management',
+    name: 'admin-create-management',
+    component: () => import('@/views/Admin/create-SubAdmin/createSubadminInfo.vue'),
+  },
 ]
