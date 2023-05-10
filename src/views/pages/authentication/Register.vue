@@ -256,7 +256,7 @@
                     </b-link>
                     .
                     Jag godkänner också att få kontouppdateringar, nyhetsbrev och meddelanden från andra medlemmar,
-                    skickade från singelsajten.se.
+                    skickade från 127.0.0.1.
                   </b-form-checkbox>
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>
@@ -333,6 +333,7 @@ import { togglePasswordVisibility } from '@core/mixins/ui/forms'
 import store from '@/store/index'
 import useJwt from '@/auth/jwt/useJwt'
 import DropdownDatepicker from 'vue-dropdown-datepicker'
+import axios from 'axios'
 
 export default {
   components: {
@@ -419,6 +420,7 @@ export default {
       birthday: '',
       gender: 'Man',
       seeking: 'Kvinna',
+      ip_address: '',
       sideImg: require('@/assets/images/pages/12.jpg'),
       // validation
       required,
@@ -431,6 +433,15 @@ export default {
       response_show: false,
       loading: false,
     }
+  },
+  mounted() {
+    axios.get('https://api.ipify.org?format=json')
+      .then(response => {
+        this.ip_address = response.data.ip
+      })
+      .catch(error => {
+        console.log(error)
+      })
   },
   computed: {
     passwordToggleIcon() {
@@ -459,6 +470,7 @@ export default {
             county: this.county,
             city: this.city,
             role: 'user',
+            ip_address: this.ip_address,
           })
             .then(response => {
               console.log(response)
