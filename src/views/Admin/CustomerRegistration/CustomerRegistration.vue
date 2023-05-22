@@ -5,7 +5,6 @@
       no-body
     >
       <b-table
-        v-if="ipAddresses.has(client.item.ip_address)"
         :fields="fields"
         :items="customers"
         responsive
@@ -68,12 +67,7 @@
     </b-modal>
   </div>
 </template>
-<style>
-.table-duplicate-ip {
-  border-bottom: 2px solid red;
-}
 
-</style>
 <script>
 import BCardCode from '@core/components/b-card-code/BCardCode.vue'
 import {
@@ -95,7 +89,6 @@ export default {
   },
   data() {
     return {
-      ipAddresses: new Set(),
       fields: [
         { key: 'customer', label: 'Client' },
         { key: 'email', label: 'Email' },
@@ -162,11 +155,7 @@ export default {
     rowClass(item, type) {
       if (!item || type !== 'row') return
       // eslint-disable-next-line consistent-return
-      if (item.status === 'remind') return
-      if (this.ipAddresses.has(item.ip_address)) {
-        this.ipAddresses.add(item.ip_address)
-        return
-      }
+      if (item.status === 'remind') return 'table-reminder'
     },
     openAssignModal(chatId) {
       this.assignChatIdSelected = chatId

@@ -206,6 +206,10 @@ export default class JwtService {
     return this.axiosIns.put(`${this.jwtConfig.getCustomerEndpoint + customerId}/`, ...args)
   }
 
+  UpdatePassword(formData) {
+    return this.axiosIns.post(this.jwtConfig.getUpdatePasswordEndpoint, formData)
+  }
+
   updateCustomerAvatar(customerId, ...args) {
     return this.axiosIns.put(`${this.jwtConfig.getCustomerPhotoEndpoint + customerId}/`, ...args)
   }

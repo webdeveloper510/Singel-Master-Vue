@@ -40,6 +40,22 @@
               />
             </b-button>
             <b-button
+              class="mr-1"
+              variant="primary"
+              @click="openPopup">Change Password</b-button>
+              <div class="modal-content">
+                <div v-if="showPopup" id="assign-modal___BV_modal_body_" class="modal-body">
+                  <header id="assign-modal___BV_modal_header_" class="modal-header"><h5 id="assign-modal___BV_modal_title_" class="modal-title">Change Password</h5><button type="button" aria-label="Close" class="close">×</button></header>
+                  <div class="modal-body">
+                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >Old Password</label>
+                    <input type="password" v-model="oldPassword" class="form-control"></div>
+                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >New Password</label>
+                    <input type="password" v-model="newPassword"  class="form-control"></div>
+                    <button @click="changePassword(userData.id)" variant="success"  class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              </div>
+            <b-button
               class="d-none"
               variant="outline-secondary"
             >
@@ -58,31 +74,6 @@
       <!-- User Info: Input Fields -->
       <b-form v-if="userData">
         <b-row>
-          <!-- Field: First Name -->
-          <!-- <b-col -->
-            <!-- cols="12" -->
-            <!-- md="4" -->
-          <!-- > -->
-            <!-- <b-form-group
-              label="Användarnamn"
-              label-for="username"
-            >
-              <validation-provider
-                #default="{ errors }"
-                name="username"
-                vid="username"
-                rules="required"
-              >
-                <b-form-input
-                  id="username"
-                  v-model="userData.username"
-                  :state="errors.length > 0 ? false:null"
-                /> -->
-                <!-- <small class="text-danger">{{ errors[0] }}</small> -->
-              <!-- </validation-provider> -->
-            <!-- </b-form-group> -->
-          <!-- </b-col> -->
-
           <b-col
             cols="12"
             md="4"
@@ -474,6 +465,8 @@ import useUsersList from './useUsersList'
 import useJwt from '@/auth/jwt/useJwt'
 import { required } from '@validations'
 import DropdownDatepicker from 'vue-dropdown-datepicker'
+import { useToast } from 'vue-toastification'
+import 'vue-toastification/dist/index.css'
 
 export default {
   components: {
@@ -500,6 +493,10 @@ export default {
         label: '',
         value: '',
       },
+      showPopup: false,
+      oldPassword: '',
+      newPassword: '',
+      toast: null,
     }
   },
   setup() {
@@ -704,6 +701,9 @@ export default {
         this.avatar = this.userData.avatar
       })
   },
+  created() {
+    this.toast = useToast()
+  },
   methods: {
     submit() {
       this.$refs.createModelForm.validate().then(success => {
@@ -720,11 +720,44 @@ export default {
         }
       })
     },
+    changePassword() {
+      this.showPopup = false
+      const formData = new FormData()
+      formData.append('old_password', this.oldPassword)
+      formData.append('new_password', this.newPassword)
+      formData.append('token', localStorage.getItem('accessToken'))
+
+      const headers = {
+        'Content-Type': 'multipart/form-data',
+        Authorization: 'Bearer YOUR_AUTHORIZATION_KEY', // Replace YOUR_AUTHORIZATION_KEY with your actual authorization key
+      }
+
+      useJwt.UpdatePassword(formData, { headers })
+        .then(response => {
+          alert(response)
+          this.toast.success('Password changed successfully')
+        })
+        .catch(error => {
+          alert(error)
+          this.toast.error('Old password Not matched.')
+        })
+        .finally(() => {
+          this.oldPassword = ''
+          this.newPassword = ''
+        })
+    },
+
+    openPopup() {
+      this.showPopup = true
+    },
   },
 }
-</script>
 
+</script>
 <style lang="scss">
 @import '@core/scss/vue/libs/vue-select.scss';
 @import '@core/scss/vue/libs/vue-flatpicker.scss';
+.modal-body{
+  background-color: #283046;
+}
 </style>
