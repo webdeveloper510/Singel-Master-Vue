@@ -152,7 +152,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">2.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Dessa villkor gäller användning av
-          singelsaten.se</span></p>
+          singelsajten.se</span></p>
 
         <p
           style="margin-left:42.55pt;text-indent:-42.55pt"
@@ -204,12 +204,12 @@ margin-left:42.55pt;text-indent:-42.55pt"
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">3.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Användning av denna tjänst och webbsida
-          (singelsaten.se) samt de tjänster som erbjuds är tillgängliga för alla som är
+          (singelsajten.se) samt de tjänster som erbjuds är tillgängliga för alla som är
           minst 18 år fyllda. Om användaren inte är minst 18 år gammal, har invändningar
           mot innehållet och/eller om användaren av webbplatsen eller tjänsten befinner
           sig på en sådan plats där tillgång till webbplatsen, eller användning av
           densamme inkluderat dess tjänster, är förbjuden, skall användaren omedelbart
-          och utan dröjsmål avbryta besöket på singelsaten.se. Tjänstägaren skall förbli
+          och utan dröjsmål avbryta besöket på singelsajten.se. Tjänstägaren skall förbli
           att anses som ansvarsbefriad för eventuell sådan handling som sker på
           användarens bevåg, medvetet eller omedvetet.</span></p>
 
@@ -221,10 +221,10 @@ margin-left:42.55pt;text-indent:-42.55pt"
           registreringsprocessen – när denna har slutförts måste användaren
           tillhandahålla aktuella och fullständiga uppgifter om sig själv. Användaren
           garanterar att förändringar av dessa uppgifter omedelbart vidarebefordras till
-          singelsaten.se eller ändras av användaren på sin egen sida hos densamme. Genom
+          singelsajten.se eller ändras av användaren på sin egen sida hos densamme. Genom
           att registrera dig beviljar du Valeri Group full åtkomst samt en licens att
           använda de immateriella rättigheterna till innehållet som tillhandahållits av
-          användaren. Denna licens innefattar specifikt rätten för singelsaten.se att
+          användaren. Denna licens innefattar specifikt rätten för singelsajten.se att
           duplicera, visa, modifiera, översätta, scanna, använda för egen publicitet,
           antingen kommersiell eller icke-kommersiell, underlicensiera och/eller överföra
           innehåll rörande profiler.</span></p>
@@ -262,7 +262,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span
           lang="SV"
         >3.7<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></b><span lang="SV">Obehörigt tillträde till singelsaten.se är en
+        </span></span></b><span lang="SV">Obehörigt tillträde till singelsajten.se är en
           straffbar förseelse.</span></p>
 
         <p
@@ -290,7 +290,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">3.10<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Det är under inga omständigheter tillåtet att
-          använda eller att ha använt singelsaten.se på något vis för olagliga
+          använda eller att ha använt singelsajten.se på något vis för olagliga
           handlingar, begå brott och/eller för handlingar som bryter mot allmänt
           tillämpliga standarder och värderingar. Detta innefattar bland annat följande;
           intrång på immateriella rättigheter tillhörande tredje part, stöld, olaglig
@@ -304,7 +304,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
         <p style="margin-left:42.55pt;text-indent:-42.55pt">
           <b><span lang="SV">3.11<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </span></span></b><span lang="SV">Du får inte använda personuppgifter tillhörande
-            tredje part som du erhåller via singelsaten.se för något ändamål. Du
+            tredje part som du erhåller via singelsajten.se för något ändamål. Du
             garanterar att du inte kommer att distribuera skräppost, kedjebrev, utskick
             eller bulkmeddelanden till användare eller före detta användare.</span></p>
 
@@ -313,7 +313,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">3.12<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Det är under inga omständigheter tillåtet att
-          publicera bilder på andra personen än dig själv på singelsaten.se, Valeri
+          publicera bilder på andra personen än dig själv på singelsajten.se, Valeri
           Group kan aldrig utkrävas ansvar över detta och förbehåller sig rätten att
           neka, ändra eller ta bort profiler alternativt delar av profiler.</span></p>
 
@@ -351,7 +351,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           lang="SV"
         >4.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Valeri Group vidtar alla möjliga åtgärder för
-          att tillhandahålla singelsaten.se utan några som helst störningar och för att
+          att tillhandahålla singelsajten.se utan några som helst störningar och för att
           göra webbplatsen säker på alla rimliga vis.</span></p>
 
         <p
@@ -361,7 +361,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
         </span></span></b><span lang="SV">Valeri Group kan inte på något sätt hållas
           ansvariga för arbetsstörningar, problem, ingripanden, förändringar eller
           funktionsbegränsningar och/eller andra orsaker som påverkar tillgängligheten av
-          singelsaten.se eller andra tjänster från Valeri Group Ltd.</span></p>
+          singelsajten.se eller andra tjänster från Valeri Group Ltd.</span></p>
 
         <p
 
@@ -384,7 +384,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           kan hända att vissa profiler, reklamer eller bidrag har underhållning som mål,
           vilket inte alltid är möjligt. Under inga omständigheter bär vi, Valeri Group och
           dess befattningshavare, ansvaret för direkta eller indirekta skador som uppstår
-          till följd av användning av singelsaten.se. Därmed friskriver vi oss från allt
+          till följd av användning av singelsajten.se. Därmed friskriver vi oss från allt
           ansvar i den utsträckning som lagen tillåter det, oavsett handlingens karaktär
           eller ringaktning av andra och andra användare.</span></p>
 
@@ -400,14 +400,14 @@ margin-left:42.55pt;text-indent:-42.55pt"
         >5.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Innehållet i externa länkar som kan placeras ut
           inom vårt nätverk kontrolleras inte av oss, utan av respektive leverantör.
-          Innehållet på singelsaten.se har sammanställts med största omsorg. Valeri
+          Innehållet på singelsajten.se har sammanställts med största omsorg. Valeri
           Group Ltd har inte ansvaret för korrektheten, fullständigheten eller
           aktualiteten och riktigheten hos den tillgängliga informationen. Bidragen
           återspeglar upphovsmannens åsikter. Karaktärer, profiler, reklam, annonser och
           bidrag är avsedda som underhållning. De fiktiva profilerna är markerade med en
           hjärtikon. Fysisk kontakt är inte möjlig. Under inga omständigheter bär vi,
           Valeri Group Ltd och dess befattningshavare, ansvaret för direkta eller
-          indirekta skador som uppstår på grund av användningen av singelsaten.se, då vi
+          indirekta skador som uppstår på grund av användningen av singelsajten.se, då vi
           friskriver oss från allt ansvar i den utsträckning som lagen tillåter det,
           oavsett handlingen karaktär eller ringaktning av användare och andra.</span></p>
 
@@ -415,7 +415,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
 
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">5.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></b><span lang="SV">singelsaten.se är underhållning som mål och
+        </span></span></b><span lang="SV">singelsajten.se är underhållning som mål och
           har inte för avsikt att skapa fysiska dejter eller möten.</span></p>
 
         <p
@@ -423,7 +423,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">5.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Valeri Group Ltd förbehåller sig uttryckligen
-          rätten att skicka meddelanden på singelsaten.se genom egenhändigt skapade
+          rätten att skicka meddelanden på singelsajten.se genom egenhändigt skapade
           profiler. Det här är fiktiva profiler som det inte går att göra några fysiska
           överenskommelser med. </span></p>
 
@@ -447,7 +447,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           tillhörande tredje part för att skicka besökare till sin webbplats, antingen
           mot en avgift eller avgiftsfritt. Sådana tredje parter bär själva ansvaret för
           innehållet på webbplatsen och för hur de skickar vidare användare till
-          singelsaten.se genom hyperlänkar.</span></p>
+          singelsajten.se genom hyperlänkar.</span></p>
 
         <p
 
@@ -473,16 +473,16 @@ margin-left:42.55pt;text-indent:-42.55pt"
         >6.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Tjänstägaren ägnar största möjliga
           uppmärksamhet åt skydd av personuppgifter tillhörande användare av
-          singelsaten.se. Mer information finns i avsnitten <i>”Sekretess &amp; Cookies”</i>
-          på singelsaten.se.</span></p>
+          singelsajten.se. Mer information finns i avsnitten <i>”Sekretess &amp; Cookies”</i>
+          på singelsajten.se.</span></p>
 
         <p
 
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">6.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></b><span lang="SV">Under besöket på singelsaten.se och/eller
+        </span></span></b><span lang="SV">Under besöket på singelsajten.se och/eller
           användningen av tjänsterna loggas information från användaren. Sådan
-          information är nödvändig och krävs för att singelsaten.se skall fungera
+          information är nödvändig och krävs för att singelsajten.se skall fungera
           korrekt och för att optimera/förbättra användarupplevelsen och/eller andra
           tjänster tillhandahållna av Valeri Group. Informationen kan även användas för
           att leta reda på fel och/eller brott, alternativt åsidosättande, av dessa
@@ -544,7 +544,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">7.3<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Krediter som införskaffats av användaren har en
           begränsad giltighetstid efter vilken de upphör att gälla. Om en användare är
-          inaktiv i mer än 90 dagar på singelsaten.se löper användarens konto, med
+          inaktiv i mer än 90 dagar på singelsajten.se löper användarens konto, med
           tillhörande krediter, risk för att raderas. Detta sker i sådana fall utan
           föregående varning och Valeri Group skall inte hållas ansvariga för eventuell
           monetär förlust för användaren i samband med detta. Användaren kan således inte
@@ -670,9 +670,9 @@ margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span
           lang="SV"
         >10.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></b><span lang="SV">Eftersom singelsaten.se inte är inblandad i
+        </span></span></b><span lang="SV">Eftersom singelsajten.se inte är inblandad i
           kommunikation mellan användare befriar du härmed, i händelse av oenighet mellan
-          dig och en annan användare, singelsaten.se från alla anspråk, alla typer av
+          dig och en annan användare, singelsajten.se från alla anspråk, alla typer av
           skador (direkta eller indirekta), kända eller okända, misstänkta eller inte,
           offentliggjorda eller inte, som uppstått på grund av sådana fall.</span></p>
 
@@ -693,15 +693,15 @@ margin-left:42.55pt;text-indent:-42.55pt"
         >11.1<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Alla immateriella rättigheter och alla liknande
           rättigheter gällande alla tjänster, produkter och uppgifter som erbjuds på
-          singelsaten.se innehas enbart av Valeri Group Ltd eller dess licensgivare.</span></p>
+          singelsajten.se innehas enbart av Valeri Group Ltd eller dess licensgivare.</span></p>
 
         <p
 
           style="margin-left:42.55pt;text-indent:-42.55pt"
         ><b><span lang="SV">11.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        </span></span></b><span lang="SV">Ingen del av singelsaten.se får reproduceras
+        </span></span></b><span lang="SV">Ingen del av singelsajten.se får reproduceras
           utan ett skriftligt medgivande från Valeri Group Ltd. De immateriella rättigheterna
-          avseende all text, bild, ljud och program på singelsaten.se tillhör Valeri
+          avseende all text, bild, ljud och program på singelsajten.se tillhör Valeri
           Group Ltd eller dess licensgivare.</span></p>
 
         <p
@@ -745,7 +745,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
           ändra de tjänster och priser som publicerats på webbplatsen och kan därmed
           justera, uppdatera eller fullständiggöra dessa villkor. Det är ditt personliga
           ansvar att hålla dig uppdaterad och granska dessa villkor med jämna mellanrum –
-          om du fortsätter att använda singelsaten.se efter datumet för ikraftträdande
+          om du fortsätter att använda singelsajten.se efter datumet för ikraftträdande
           av ändringarna, godkänner du per automatik dessa.</span></p>
 
         <p
@@ -756,7 +756,7 @@ margin-left:42.55pt;text-indent:-42.55pt"
         >12.2<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </span></span></b><span lang="SV">Valeri Group Ltd, och dess befattningshavare,
           friskriver sig från allt ansvar för de eventuella negativa konsekvenser som kan
-          uppstå på grund av ändringar av innehållet på singelsaten.se eller av
+          uppstå på grund av ändringar av innehållet på singelsajten.se eller av
           villkoren</span></p>
 
       </b-col>

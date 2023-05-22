@@ -9,7 +9,7 @@ export default {
     fetchChatsAndContacts() {
       return new Promise((resolve, reject) => {
         axios
-          .get('http://singelsaten.se:8000/api/chat/')
+          .get('http://singelsajten.se:8000/api/chat/')
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -25,7 +25,7 @@ export default {
     getChatPhotos(ctx, { girlId }) {
       return new Promise((resolve, reject) => {
         axios
-          .get(`http://singelsaten.se:8000/api/moderator/model-photo/?model_id=${girlId}&private=1`)
+          .get(`http://singelsajten.se:8000/api/moderator/model-photo/?model_id=${girlId}&private=1`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -33,7 +33,7 @@ export default {
     getChat(ctx, { chatId }) {
       return new Promise((resolve, reject) => {
         axios
-          .get(`http://singelsaten.se:8000/api/chat/detail/${chatId}/`)
+          .get(`http://singelsajten.se:8000/api/chat/detail/${chatId}/`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })

@@ -256,7 +256,7 @@
                     </b-link>
                     .
                     Jag godkänner också att få kontouppdateringar, nyhetsbrev och meddelanden från andra medlemmar,
-                    skickade från singelsaten.se.
+                    skickade från singelsajten.se.
                   </b-form-checkbox>
                   <small class="text-danger">{{ errors[0] }}</small>
                 </validation-provider>
