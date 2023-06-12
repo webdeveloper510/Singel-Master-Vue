@@ -42,14 +42,14 @@
             <b-button
               class="mr-1"
               variant="primary"
-              @click="openPopup">Change Password</b-button>
+              @click="openPopup">Byt Lösenord</b-button>
               <div class="modal-content">
                 <div v-if="showPopup" id="assign-modal___BV_modal_body_" class="modal-body">
-                  <header id="assign-modal___BV_modal_header_" class="modal-header"><h5 id="assign-modal___BV_modal_title_" class="modal-title">Change Password</h5><button type="button" aria-label="Close" class="close">×</button></header>
+                  <header id="assign-modal___BV_modal_header_" class="modal-header"><h5 id="assign-modal___BV_modal_title_" class="modal-title">Byt Lösenord</h5><button type="button" aria-label="Close" class="close">×</button></header>
                   <div class="modal-body">
-                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >Old Password</label>
+                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >Ditt nuvarande Lösenord</label>
                     <input type="password" v-model="oldPassword" class="form-control"></div>
-                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >New Password</label>
+                    <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >Nytt Lösenord</label>
                     <input type="password" v-model="newPassword"  class="form-control"></div>
                     <button @click="changePassword(userData.id)" variant="success"  class="btn btn-primary">Submit</button>
                   </div>
@@ -448,6 +448,34 @@
       </b-card-text>
     </b-modal>
 
+    <b-modal
+      ref="nomatch-modal"
+      title="Error"
+      ok-only
+      ok-variant="error"
+      ok-title="Ok"
+      modal-class="modal-error"
+      centered
+    >
+      <b-card-text>
+        Passwords empty or do not match.
+      </b-card-text>
+    </b-modal>
+
+    <b-modal
+      ref="pass-success-modal"
+      title="Success"
+      ok-only
+      ok-variant="success"
+      ok-title="Ok"
+      modal-class="modal-success"
+      centered
+    >
+      <b-card-text>
+        Password edited successfully.
+      </b-card-text>
+    </b-modal>
+
   </div>
 </template>
 
@@ -729,17 +757,14 @@ export default {
 
       const headers = {
         'Content-Type': 'multipart/form-data',
-        Authorization: 'Bearer YOUR_AUTHORIZATION_KEY', // Replace YOUR_AUTHORIZATION_KEY with your actual authorization key
       }
 
       useJwt.UpdatePassword(formData, { headers })
-        .then(response => {
-          alert(response)
-          this.toast.success('Password changed successfully')
+        .then(() => {
+          this.$refs['pass-success-modal'].show()
         })
-        .catch(error => {
-          alert(error)
-          this.toast.error('Old password Not matched.')
+        .catch(() => {
+          this.$refs['nomatch-modal'].show()
         })
         .finally(() => {
           this.oldPassword = ''
