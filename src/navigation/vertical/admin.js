@@ -8,15 +8,20 @@ export default [
     route: 'moderator-lobby',
   },
   {
-    title: 'Affiliate',
-    route: 'moderator-affiliate',
-    icon: 'EyeIcon',
-  },
-  {
     title: 'Statistics',
     route: 'moderator-statistics',
     icon: 'TrendingUpIcon',
   },
+  {
+    title: 'Affiliate',
+    route: 'moderator-affiliate',
+    icon: 'EyeIcon',
+  },
+  // {
+  //   title: 'Statistics',
+  //   route: 'moderator-statistics',
+  //   icon: 'TrendingUpIcon',
+  // },
   {
     title: 'Create Model',
     route: 'moderator-create-model',
@@ -71,13 +76,18 @@ export default [
     icon: 'HeartIcon',
   },
   {
-    title: 'Sub Admin Management',
-    route: 'admin-create-management',
+    title: 'Problem',
+    // route: '',
     icon: 'GridIcon',
   },
+  // {
+  //   title: 'Sub Admin',
+  //   route: 'admin-create-subadmin',
+  //   icon: 'UserCheckIcon',
+  // },
   {
-    title: 'Sub Admin',
-    route: 'admin-create-subadmin',
+    title: 'Admin Panel',
+    route: 'admin-panel',
     icon: 'UserCheckIcon',
   },
 ]

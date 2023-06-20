@@ -5,17 +5,22 @@ export default [
     route: 'moderator-lobby',
   },
   {
+    title: 'Statistics',
+    route: 'moderator-statistics',
+    icon: 'TrendingUpIcon',
+  },
+  {
     title: 'Affiliate',
     route: 'moderator-affiliate',
     icon: 'EyeIcon',
     tag: 'new',
     tagVariant: 'light-success',
   },
-  {
-    title: 'Statistics',
-    route: 'moderator-statistics',
-    icon: 'TrendingUpIcon',
-  },
+  // {
+  //   title: 'Statistics',
+  //   route: 'moderator-statistics',
+  //   icon: 'TrendingUpIcon',
+  // },
   {
     title: 'Create Model',
     route: 'moderator-create-model',

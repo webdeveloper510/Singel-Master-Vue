@@ -5,15 +5,20 @@ export default [
     route: 'moderator-lobby',
   },
   {
-    title: 'Affiliate',
-    route: 'moderator-affiliate',
-    icon: 'EyeIcon',
-  },
-  {
     title: 'Statistics',
     route: 'moderator-statistics',
     icon: 'TrendingUpIcon',
   },
+  {
+    title: 'Affiliate',
+    route: 'moderator-affiliate',
+    icon: 'EyeIcon',
+  },
+  // {
+  //   title: 'Statistics',
+  //   route: 'moderator-statistics',
+  //   icon: 'TrendingUpIcon',
+  // },
   {
     title: 'Create Model',
     route: 'moderator-create-model',

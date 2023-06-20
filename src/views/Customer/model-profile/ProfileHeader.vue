@@ -20,7 +20,8 @@
         <!-- profile title -->
         <div class="profile-title ml-3">
           <h2 class="text-white">
-            {{ headerData.first_name }} {{ headerData.last_name }}
+            <!-- here shold be username of lady -->
+            {{ headerData.username }}
           </h2>
           <p class="text-white">
             {{ headerData.gender }}

@@ -45,7 +45,7 @@
               @click="openPopup">Byt Lösenord</b-button>
               <div class="modal-content">
                 <div v-if="showPopup" id="assign-modal___BV_modal_body_" class="modal-body">
-                  <header id="assign-modal___BV_modal_header_" class="modal-header"><h5 id="assign-modal___BV_modal_title_" class="modal-title">Byt Lösenord</h5><button type="button" aria-label="Close" class="close">×</button></header>
+                  <header id="assign-modal___BV_modal_header_" class="modal-header"><h5 id="assign-modal___BV_modal_title_" class="modal-title">Byt Lösenord</h5><button type="button" aria-label="Close" class="close" @click="closePopup">×</button></header>
                   <div class="modal-body">
                     <div role="group" class="form-group" id="__BVID__360"><label for="affiliate" class="d-block" >Ditt nuvarande Lösenord</label>
                     <input type="password" v-model="oldPassword" class="form-control"></div>
@@ -774,6 +774,10 @@ export default {
 
     openPopup() {
       this.showPopup = true
+    },
+
+    closePopup() {
+      this.showPopup = false
     },
   },
 }

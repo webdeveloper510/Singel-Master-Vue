@@ -84,4 +84,14 @@ export default [
     name: 'admin-create-management',
     component: () => import('@/views/Admin/create-SubAdmin/createSubadminInfo.vue'),
   },
+  {
+    path: '/adminUser/admin-panel',
+    name: 'admin-panel',
+    component: () => import('@/views/Admin/create-SubAdmin/adminPanel.vue'),
+  },
+  {
+    path: '/adminUser/conversation-log',
+    name: 'Conversation-log',
+    component: () => import('@/views/Admin/conversation-log/Conversation-log.vue'),
+  },
 ]

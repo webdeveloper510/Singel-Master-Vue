@@ -359,6 +359,7 @@ export default {
     useJwt.getCustomers(queryString)
       .then(response => {
         this.customers = response.data
+        console.log(this.customers, 'This customers <----------------')
       }).catch(error => {
         console.log(error)
       })

@@ -41,6 +41,13 @@
             <span class="text-nowrap">€ {{ data.item.revenue }}</span>
           </span>
         </template>
+        <template #cell(rank)="data">
+          <span
+            class="text-nowrap"
+          >
+            <span class="text-nowrap"> {{ data.item.moderator.role }}</span>
+          </span>
+        </template>
         <!-- A custom formatted column -->
         <template #cell(id)="client">
           <b-button
@@ -162,6 +169,7 @@ export default {
         { key: 'affiliate', label: 'Affiliate Commission' },
         { key: 'revenue', label: 'Revenue on this Month' },
         { key: 'customers', label: 'Affiliated Customers' },
+        { key: 'rank', label: 'Rank' },
         { key: 'id', label: 'Detail/Config' },
       ],
       items: [],
