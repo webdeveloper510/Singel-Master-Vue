@@ -92,6 +92,6 @@ export default [
   {
     path: '/adminUser/conversation-log',
     name: 'Conversation-log',
-    component: () => import('@/views/Admin/conversation-log/Conversation-log.vue'),
+    component: () => import('@/views/Admin/ConversationLog/Conversation-log.vue'),
   },
 ]

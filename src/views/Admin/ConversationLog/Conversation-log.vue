@@ -115,9 +115,9 @@ import BCardCode from '@core/components/b-card-code/BCardCode.vue'
 import {
   BTable, BButton, BAvatar, BModal, VBModal, BFormTextarea,
 } from 'bootstrap-vue'
-// import Ripple from 'vue-ripple-directive'
+import Ripple from 'vue-ripple-directive'
 import Customers from '../trigger/Customers.vue'
-// import Models from '../trigger/Models.vue'
+import Models from '../trigger/Models.vue'
 import useJwt from '@/auth/jwt/useJwt'
 import {
   ref,
@@ -132,12 +132,12 @@ export default {
     BAvatar,
     BModal,
     Customers,
-    // Models,
+    Models,
     BFormTextarea,
   },
   directives: {
     'b-modal': VBModal,
-    // Ripple,
+    Ripple,
   },
   data() {
     return {

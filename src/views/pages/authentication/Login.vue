@@ -247,8 +247,15 @@ export default {
       this.loading = false
       this.$refs.loginForm.validate().then(success => {
         if (success) {
+          let loginField
+          if (this.username.match(/^\S+@\S+\.\S+$/)) {
+            loginField = 'email'
+          } else {
+            loginField = 'username'
+          }
+
           useJwt.login({
-            username: this.username,
+            [loginField]: this.username,
             password: this.password,
           })
             .then(response => {
