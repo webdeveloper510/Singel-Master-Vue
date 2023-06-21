@@ -116,8 +116,8 @@ import {
   BTable, BButton, BAvatar, BModal, VBModal, BFormTextarea,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
-import Customers from '../trigger/Customers.vue'
-import Models from '../trigger/Models.vue'
+import Customers from '../../Moderator/trigger/Customers.vue'
+import Models from '../../Moderator/trigger/Models.vue'
 import useJwt from '@/auth/jwt/useJwt'
 import {
   ref,

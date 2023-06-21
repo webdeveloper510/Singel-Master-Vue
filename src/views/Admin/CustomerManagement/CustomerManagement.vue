@@ -19,7 +19,7 @@
         :tbody-tr-class="rowClass"
         :filter="searchTerm"
       >
-        <template #cell(customer)="client">
+        <!-- <template #cell(customer)="client">
           <span
             class="text-nowrap"
           >
@@ -27,9 +27,29 @@
               :src="client.item.avatar"
               class="mr-1"
             />
-            <span class="text-nowrap">{{ client.item.username }}</span>
+            <span class="text-nowrap" >{{ client.item.username }}</span>
           </span>
-        </template>
+        </template> -->
+        <!-- <template #cell(customer)="client">
+      <span class="text-nowrap" :style="{ color: getColor(client.item.ip_address) }">
+        <b-avatar :src="client.item.avatar" class="mr-1" />
+        <span class="text-nowrap">{{ client.item.username }}</span>
+      </span>
+    </template> -->
+    <!-- <template #cell(customer)="client">
+      <span class="text-nowrap" :style="{ color: getColor(client.item.ip_address, client.item.username) }">
+        <b-avatar :src="client.item.avatar" class="mr-1" />
+        <span class="text-nowrap">{{ client.item.username }}</span>
+      </span>
+    </template> -->
+    <template #cell(customer)="client">
+      <span class="text-nowrap">
+        <b-avatar :src="client.item.avatar" class="mr-1" />
+        <span class="text-nowrap">{{ appendStar(client.item.username, client.item.ip_address) }}</span>
+
+      </span>
+    </template>
+        <!-- ip_address -->
 
         <template #cell(registered_at)="client">
           {{ dateOnly(client.item.registered_at) }}
@@ -224,6 +244,9 @@ export default {
       customers: [],
       selectedCustomer: null,
       coin: 0,
+      colorMap: {},
+      clients: [],
+      isBool: false,
     }
   },
   mounted() {
@@ -236,6 +259,7 @@ export default {
         .then(response => {
           this.customers = response.data
           console.log('CUSTOMERS========>', this.customers)
+          this.clients = this.customers
         }).catch(error => {
           console.log(error)
         })
@@ -319,7 +343,28 @@ export default {
     dateFormat(s) {
       return moment(s).local().format('HH:mm - DD/MM/YYYY')
     },
+    // getColor(ipAddress) {
+    //   if (!ipAddress) return ''
+    //   if (!this.colorMap[ipAddress]) {
+    //     const usersWithSameIP = this.clients.filter(client => client.item.ip_address === ipAddress)
+    //     if (usersWithSameIP.length === 1) {
+    //       this.colorMap[ipAddress] = 'white'
+    //     } else {
+    //       this.colorMap[ipAddress] = this.generateColor()
+    //     }
+    //   }
+    //   return this.colorMap[ipAddress]
+    // },
+    // generateColor() {
+    //   return `#${Math.floor(Math.random() * 16777215).toString(16)}`
+    // },
+    appendStar(username, ipAddress) {
+      const usersWithSameIP = this.clients.filter(client => client.ip_address === ipAddress)
+      if (usersWithSameIP.length > 1) {
+        return `${username} *` // Append red asterisk (*) to the username if more than one user with the same IP address
+      }
+      return username
+    },
   },
-
 }
 </script>

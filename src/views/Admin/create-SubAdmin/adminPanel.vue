@@ -107,6 +107,7 @@
                   variant="primary"
                   block
                   type="button"
+                  @click="redirectToOnlineListPage()"
                 >
                   Online List
                 </b-button>
@@ -210,7 +211,7 @@ export default {
       this.$router.push('/moderator/statistics')
     },
     redirectToOnlineListPage() {
-      this.$router.push('/adminUser/create-subadmin')
+      this.$router.push('/adminUser/online-list')
     },
   },
 }

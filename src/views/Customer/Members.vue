@@ -94,7 +94,7 @@
             md="6"
           >
             <b-form-group
-              label="Användarnamn"
+              label="Användarnamn`"
               label-for="username"
               label-cols-sm="5"
               label-align-sm="right"

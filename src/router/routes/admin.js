@@ -94,4 +94,9 @@ export default [
     name: 'Conversation-log',
     component: () => import('@/views/Admin/ConversationLog/Conversation-log.vue'),
   },
+  {
+    path: '/adminUser/online-list',
+    name: 'onlineList',
+    component: () => import('@/views/Admin/onlineList/OnlineList.vue'),
+  },
 ]
