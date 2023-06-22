@@ -42,18 +42,14 @@
             {{ item.county }} {{ item.city }}
           </b-card-text>
           <b-button
-            v-if="item.liked"
+            v-if="likedGirls.includes(item.id)"
             v-ripple.400="'rgba(113, 102, 240, 0.15)'"
             variant="outline-primary"
             size="sm"
             class="mt-1 mr-1"
             @click="user_like(item.id, idx)"
           >
-            <feather-icon
-              class="d-none"
-              size="16"
-              :icon="'HeartIcon'"
-            />Unlike
+            <feather-icon class="d-none" size="16" :icon="'HeartIcon'" />Unlike
           </b-button>
           <b-button
             v-else
@@ -63,11 +59,7 @@
             class="mt-1 mr-1"
             @click="user_like(item.id, idx)"
           >
-            <feather-icon
-              class="d-none"
-              size="16"
-              :icon="'HeartIcon'"
-            />Like
+            <feather-icon class="d-none" size="16" :icon="'HeartIcon'" />Like
           </b-button>
           <b-button
             v-ripple.400="'rgba(113, 102, 240, 0.15)'"
@@ -159,13 +151,6 @@ export default {
     this.getRandomGirl()
   },
   methods: {
-    getLikedGirls() {
-      useJwt.getLikedGirls()
-        .then(response => {
-          console.log('respose---vbcv>', response.data)
-          this.likedGirls = response.data
-        })
-    },
     getRandomGirl() {
       console.log('here')
       useJwt.getRandomGirl()
@@ -173,6 +158,12 @@ export default {
           console.log('respose--->', response.data)
           this.randomGirls = response.data
           console.log(this.randomGirls)
+        })
+    },
+    getLikedGirls() {
+      useJwt.getLikedGirls()
+        .then(response => {
+          this.likedGirls = response.data.map(item => item.id)
         })
     },
     create_chat(girlId) {
@@ -185,11 +176,20 @@ export default {
         })
     },
     user_like(girl, idx) {
+      const isLiked = this.likedGirls.includes(girl)
       useJwt.userLike({ girl })
         .then(response => {
-          this.girls[idx].liked = response.data.liked
+          if (isLiked) {
+            // Remove the ID from the liked array
+            this.likedGirls = this.likedGirls.filter(id => id !== girl)
+          } else {
+            // Add the ID to the liked array
+            this.likedGirls.push(girl)
+          }
+          this.girls[idx].likedGirls = response.data.liked
           console.log(this.girls[idx].liked)
-        }).catch(error => {
+        })
+        .catch(error => {
           console.log(error)
         })
     },
