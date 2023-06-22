@@ -42,19 +42,47 @@
             {{ item.county }} {{ item.city }}
           </b-card-text>
           <b-button
+            v-if="item.liked"
+            v-ripple.400="'rgba(113, 102, 240, 0.15)'"
+            variant="outline-primary"
+            size="sm"
+            class="mt-1 mr-1"
+            @click="user_like(item.id, idx)"
+          >
+            <feather-icon
+              class="d-none"
+              size="16"
+              :icon="'HeartIcon'"
+            />Unlike
+          </b-button>
+          <b-button
+            v-else
             v-ripple.400="'rgba(113, 102, 240, 0.15)'"
             variant="gradient-primary"
             size="sm"
-            class="mt-1"
-            :to="{name:'moderator-model-edit', params: {model_id: item.id}}"
+            class="mt-1 mr-1"
+            @click="user_like(item.id, idx)"
           >
             <feather-icon
+              class="d-none"
               size="16"
-              :icon="'EditIcon'"
-            />
-            Edit
+              :icon="'HeartIcon'"
+            />Like
           </b-button>
-
+          <b-button
+            v-ripple.400="'rgba(113, 102, 240, 0.15)'"
+            variant="outline-success"
+            class="mt-1"
+            size="sm"
+            @click="create_chat(item.id)"
+          >
+            <feather-icon
+              class="d-none"
+              size="16"
+              :icon="'MessageSquareIcon'"
+            />
+            Chatt
+          </b-button>
         </b-card>
       </b-col>
     </b-row>
@@ -122,6 +150,8 @@ export default {
     return {
       likedGirls: [],
       randomGirls: [],
+      girls: null,
+      userId: JSON.parse(localStorage.getItem('userData')).id,
     }
   },
   mounted() {
@@ -143,6 +173,24 @@ export default {
           console.log('respose--->', response.data)
           this.randomGirls = response.data
           console.log(this.randomGirls)
+        })
+    },
+    create_chat(girlId) {
+      useJwt.createChat({ girl: girlId, customer: this.userId })
+        .then(response => {
+          console.log(response.data)
+          this.$router.push({ name: 'customer-chat-spec', params: { chatId: response.data.id } })
+        }).catch(error => {
+          console.log(error)
+        })
+    },
+    user_like(girl, idx) {
+      useJwt.userLike({ girl })
+        .then(response => {
+          this.girls[idx].liked = response.data.liked
+          console.log(this.girls[idx].liked)
+        }).catch(error => {
+          console.log(error)
         })
     },
   },

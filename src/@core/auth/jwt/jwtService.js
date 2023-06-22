@@ -262,6 +262,10 @@ export default class JwtService {
     return this.axiosIns.post(this.jwtConfig.userLikeEndpoint, ...args)
   }
 
+  userLikeget(...args) {
+    return this.axiosIns.get(this.jwtConfig.getLikedGirlsEndpoint, ...args)
+  }
+
   getLikedGirls() {
     return this.axiosIns.get(this.jwtConfig.getLikedGirlsEndpoint)
   }

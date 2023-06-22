@@ -153,18 +153,14 @@
             {{ item.county }} {{ item.city }}
           </b-card-text>
           <b-button
-            v-if="item.liked"
+            v-if="liked.includes(item.id)"
             v-ripple.400="'rgba(113, 102, 240, 0.15)'"
             variant="outline-primary"
             size="sm"
             class="mt-1 mr-1"
             @click="user_like(item.id, idx)"
           >
-            <feather-icon
-              class="d-none"
-              size="16"
-              :icon="'HeartIcon'"
-            />Unlike
+            <feather-icon class="d-none" size="16" :icon="'HeartIcon'" />Unlike
           </b-button>
           <b-button
             v-else
@@ -174,11 +170,7 @@
             class="mt-1 mr-1"
             @click="user_like(item.id, idx)"
           >
-            <feather-icon
-              class="d-none"
-              size="16"
-              :icon="'HeartIcon'"
-            />Like
+            <feather-icon class="d-none" size="16" :icon="'HeartIcon'" />Like
           </b-button>
           <b-button
             v-ripple.400="'rgba(113, 102, 240, 0.15)'"
@@ -232,6 +224,7 @@ export default {
     return {
       girls: null,
       userId: JSON.parse(localStorage.getItem('userData')).id,
+      liked: null,
     }
   },
   setup() {
@@ -401,6 +394,11 @@ export default {
       }).catch(error => {
         console.log(error)
       })
+    useJwt.userLikeget()
+      .then(res => {
+        this.liked = res.data.map(item => item.id)// Populate the array with IDs
+      })
+      .catch(err => console.log(err, 'error in get'))
   },
   methods: {
     serialize(obj) {
@@ -451,15 +449,24 @@ export default {
       return []
     },
     user_like(girl, idx) {
-      console.log(girl)
+      const isLiked = this.liked.includes(girl)
       useJwt.userLike({ girl })
         .then(response => {
+          if (isLiked) {
+            // Remove the ID from the liked array
+            this.liked = this.liked.filter(id => id !== girl)
+          } else {
+            // Add the ID to the liked array
+            this.liked.push(girl)
+          }
           this.girls[idx].liked = response.data.liked
           console.log(this.girls[idx].liked)
-        }).catch(error => {
+        })
+        .catch(error => {
           console.log(error)
         })
     },
+
   },
 
 }
