@@ -92,21 +92,22 @@
         v-if="selectedGirlId"
         class="mt-4"
       >
-        <h4>Input your first message</h4>
+        <h4>Conversation</h4>
         <b-form-textarea
-          id="about-me"
+          id="conversation"
           v-model="messageText"
           placeholder=""
           rows="3"
           class="mt-2"
+          readonly
         />
-        <b-button
+        <!-- <b-button
           v-if="messageText"
           variant="gradient-primary"
           class="btn mt-2 mb-4"
           @click="triggerMessage"
         >Send Message
-        </b-button>
+        </b-button> -->
       </div>
     </div>
   </template>
@@ -116,8 +117,8 @@ import {
   BTable, BButton, BAvatar, BModal, VBModal, BFormTextarea,
 } from 'bootstrap-vue'
 import Ripple from 'vue-ripple-directive'
-import Customers from './Customers.vue'
-import Models from './Models.vue'
+import Customers from '../../Moderator/trigger/Customers.vue'
+import Models from '../../Moderator/trigger/Models.vue'
 import useJwt from '@/auth/jwt/useJwt'
 import {
   ref,

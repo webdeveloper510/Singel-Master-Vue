@@ -17,9 +17,9 @@
         style="font-size:0.8rem;"
       >
         Kontaktuppgifter: <a
-          href="mailto:support@127.0.0.1"
+          href="mailto:support@singelsajten.se"
           style="color:white;"
-        >support@127.0.0.1</a>
+        >support@singelsajten.se</a>
       </p>
       <p
         class="my-0 d-none"
@@ -43,7 +43,7 @@
             class="ml-25"
             href="#"
             target="_blank"
-          >127.0.0.1</b-link>
+          >singelsajten.se</b-link>
           <span class="d-none d-sm-inline-block">, All rights Reserved</span>
         </span>
       </p>

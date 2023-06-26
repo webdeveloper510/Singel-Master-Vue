@@ -120,6 +120,7 @@ export default {
     }
     lobbySocket.onclose = e => {
       console.error('lobby socket closed unexpectedly!', e)
+      console.log(lobbySocket)
     }
     this.$store.commit('appConfig/INIT_SOCKET', lobbySocket)
   },

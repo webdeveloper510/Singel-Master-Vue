@@ -310,7 +310,7 @@ export default {
       console.log('assigned')
       useJwt.assignChat(payload)
         .then(response => {
-          console.log(response.data)
+          console.log(response.data, 'response in chatOpen <-----------')
           this.$router.push({ name: 'moderator-chat', params: { chat_id: chatId } })
         }).catch(error => {
           alert(error)

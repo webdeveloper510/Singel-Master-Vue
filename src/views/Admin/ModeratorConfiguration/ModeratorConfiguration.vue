@@ -99,6 +99,16 @@
         username:<b class="ml-1">{{ selectedModerator.moderator.username }}</b>
       </h4>
       <b-form-group
+        label-for="changeusername"
+        label="Change Username"
+      >
+        <b-form-input
+          id="changeusername"
+          v-model="selectedModerator.moderator.username"
+          type="text"
+        />
+      </b-form-group>
+      <b-form-group
         label-for="message"
         label="Message Price(€)"
       >
@@ -171,6 +181,7 @@ export default {
         { key: 'customers', label: 'Affiliated Customers' },
         { key: 'rank', label: 'Rank' },
         { key: 'id', label: 'Detail/Config' },
+        { key: 'changeusername', label: 'Change Username' },
       ],
       items: [],
       assignedItems: [],
@@ -209,6 +220,7 @@ export default {
     },
     changeModeratorSetting() {
       this.assignModalShow = false
+      console.log(this.selectedModerator, 'selected moderaTOR<-------------')
       useJwt.updateModeratorSetting(this.selectedModerator.pk, this.selectedModerator)
         .then(response => {
           console.log(response.data)
