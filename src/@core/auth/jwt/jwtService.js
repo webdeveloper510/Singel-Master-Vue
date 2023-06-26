@@ -297,4 +297,8 @@ export default class JwtService {
   getMatchList(...args) {
     return this.axiosIns.post(this.jwtConfig.girlMatchListEndpoint, ...args)
   }
+
+  startmessage(...args) {
+    return this.axiosIns.post(this.jwtConfig.startMessage, ...args)
+  }
 }

@@ -308,7 +308,7 @@ export default {
         moderator: this.userName,
       }
       console.log('assigned')
-      useJwt.assignChat(payload)
+      useJwt.startmessage(payload)
         .then(response => {
           console.log(response.data, 'response in chatOpen <-----------')
           this.$router.push({ name: 'moderator-chat', params: { chat_id: chatId } })

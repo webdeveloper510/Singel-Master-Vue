@@ -362,6 +362,7 @@ export default {
       store.dispatch('app-chat/getChat', { chatId })
         .then(response => {
           activeChat.value = response.data
+          console.log(activeChat.value)
           if (activeChat.value.status === 'assign') {
             if (activeChat.value.assigned_moderator) {
               if (activeChat.value.assigned_moderator.id !== profileUserDataMinimal.value.id) {

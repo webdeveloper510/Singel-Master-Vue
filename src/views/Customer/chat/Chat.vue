@@ -306,9 +306,9 @@ export default {
         })
       }
 
-      if (mySocket.value) {
-        mySocket.value.close()
-      }
+      // if (mySocket.value) {
+      //   mySocket.value.close()
+      // }
 
       mySocket.value = socket
 
@@ -324,7 +324,7 @@ export default {
       console.log('here', chatInputMessage.value)
       /* coin check */
       const coin = store.state.appConfig.userData.coins
-
+      console.log(coin)
       if (coin < 10) {
         alert('coin error')
         return
@@ -343,14 +343,14 @@ export default {
         chatId: activeChat.value.id,
         senderId: activeChat.value.customer.id,
       }
-
       if (mySocket) {
         mySocket.value.send(
           JSON.stringify(payload),
         )
-        console.log(mySocket)
+        console.log(mySocket.value.readyState)
         if (mySocket.value && mySocket.value.readyState === WebSocket.OPEN) {
           mySocket.value.send(JSON.stringify(payload))
+          console.log(mySocket.value.send(JSON.stringify(payload)))
           useJwt.updateCoin()
             .then(result => {
               console.log(result.data)
