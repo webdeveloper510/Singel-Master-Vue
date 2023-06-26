@@ -116,12 +116,13 @@ export default {
     const apiSever = jwtDefaultConfig.socketHost
     const lobbySocket = new WebSocket(`ws://${apiSever}/ws/lobby/`)
     lobbySocket.onopen = e => {
-      console.log('chat socket opened!', e)
+      console.log('lobby socket opened!', e)
     }
     lobbySocket.onclose = e => {
-      console.error('chat socket closed unexpectedly!', e)
+      console.error('lobby socket closed unexpectedly!', e)
     }
     this.$store.commit('appConfig/INIT_SOCKET', lobbySocket)
   },
+
 }
 </script>

@@ -1,5 +1,7 @@
 import axios from '@axios'
 
+const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || 'http://127.0.0.1:8000'
+
 export default {
   namespaced: true,
   state: {},
@@ -9,7 +11,7 @@ export default {
     fetchChatsAndContacts() {
       return new Promise((resolve, reject) => {
         axios
-          .get('http://127.0.0.1:8000/api/chat/')
+          .get(`${API_BASE_URL}/api/chat/`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -17,7 +19,7 @@ export default {
     getProfileUser() {
       return new Promise((resolve, reject) => {
         axios
-          .get('/apps/chat/users/profile-user')
+          .get(`${API_BASE_URL}/apps/chat/users/profile-user`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -25,7 +27,7 @@ export default {
     getChat(ctx, { chatId }) {
       return new Promise((resolve, reject) => {
         axios
-          .get(`http://127.0.0.1:8000/api/chat/detail/${chatId}/`)
+          .get(`${API_BASE_URL}/api/chat/detail/${chatId}/`)
           .then(response => resolve(response))
           .catch(error => reject(error))
       })
@@ -33,7 +35,7 @@ export default {
     sendMessage(ctx, { contactId, message, senderId }) {
       return new Promise((resolve, reject) => {
         axios
-          .post(`/apps/chat/chats/${contactId}`, { message, senderId })
+          .post(`${API_BASE_URL}/apps/chat/chats/${contactId}`, { message, senderId })
           .then(response => resolve(response))
           .catch(error => reject(error))
       })

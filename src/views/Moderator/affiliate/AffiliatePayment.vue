@@ -106,7 +106,7 @@
   }
   .filters label {
     font-size: 18px;
-  }
+  }Affiliate Lis
 
   .filters input[type=date] {
     background: none;
@@ -165,7 +165,6 @@ export default {
       return ''
     },
     OnChange() {
-      console.log(this.filters.fromDate, this.filters.toDate)
       this.transactions = [...this.data]
       if (this.filters.today || this.filters.yesterday || this.filters.thisMonth || this.filters.customDates) {
         if (this.filters.today) {

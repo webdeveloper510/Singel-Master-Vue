@@ -57,7 +57,7 @@ export default {
     this.$http.get('/ecommerce/data')
       .then(response => {
         this.data = response.data
-        console.log(this.data)
+        console.log('HEre', response)
       })
 
     useJwt.getTransaction()

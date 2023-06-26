@@ -1,6 +1,6 @@
 export default {
   // Endpoints
-  socketHost: '127.0.0.1',
+  socketHost: '127.0.0.1:8000',
   loginEndpoint: 'http://127.0.0.1:8000/auth/token/login/',
   registerEndpoint: 'http://127.0.0.1:8000/auth/users/',
   refreshEndpoint: 'http://127.0.0.1:8000/jwt/refresh-token',

@@ -293,7 +293,7 @@ export default {
         console.log('chat socket opened!', e)
       }
       socket.onclose = e => {
-        console.log('chat socket closed unexpectedly!', e)
+        console.log('chat Customer socket closed unexpectedly!', e)
       }
       socket.onmessage = e => {
         console.log('chat message received')
@@ -349,18 +349,22 @@ export default {
           JSON.stringify(payload),
         )
         console.log(mySocket)
-        useJwt.updateCoin()
-          .then(result => {
-            store.commit('appConfig/UPDATE_USERDATA', result.data)
-            const userData = result.data
-            userData.ability = [
-              {
-                action: 'manage',
-                subject: 'all',
-              },
-            ]
-            localStorage.setItem('userData', JSON.stringify(userData))
-          })
+        if (mySocket.value && mySocket.value.readyState === WebSocket.OPEN) {
+          mySocket.value.send(JSON.stringify(payload))
+          useJwt.updateCoin()
+            .then(result => {
+              console.log(result.data)
+              store.commit('appConfig/UPDATE_USERDATA', result.data)
+              const userData = result.data
+              userData.ability = [
+                {
+                  action: 'manage',
+                  subject: 'all',
+                },
+              ]
+              localStorage.setItem('userData', JSON.stringify(userData))
+            })
+        }
       }
 
       const payload1 = {
