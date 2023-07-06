@@ -67,7 +67,7 @@
           class="user-chats scroll-area"
         >
           <chat-log
-            :chat-data="activeChat"
+            :chat-data="activeChat.valaue"
             :profile-user-avatar="profileUserDataMinimal.avatar"
           />
         </vue-perfect-scrollbar>
@@ -279,6 +279,7 @@ export default {
       store.dispatch('app-chat/getChat', { chatId })
         .then(response => {
           activeChat.value = response.data
+          console.log(activeChat.value, '<-------------------------------')
           // Set unseenMsgs to 0
           const contact = chatsContacts.value.find(c => c.id === chatId)
           if (contact) contact.unseenMsgs = 0
@@ -343,6 +344,7 @@ export default {
         chatId: activeChat.value.id,
         senderId: activeChat.value.customer.id,
       }
+      console.log(JSON.stringify(payload))
       if (mySocket) {
         mySocket.value.send(
           JSON.stringify(payload),
@@ -350,7 +352,7 @@ export default {
         console.log(mySocket.value.readyState)
         if (mySocket.value && mySocket.value.readyState === WebSocket.OPEN) {
           mySocket.value.send(JSON.stringify(payload))
-          console.log(mySocket.value.send(JSON.stringify(payload)))
+          console.log(mySocket)
           useJwt.updateCoin()
             .then(result => {
               console.log(result.data)
@@ -363,6 +365,10 @@ export default {
                 },
               ]
               localStorage.setItem('userData', JSON.stringify(userData))
+            })
+          useJwt.sendMessage(JSON.stringify(payload))
+            .then(result => {
+              console.log(result)
             })
         }
       }

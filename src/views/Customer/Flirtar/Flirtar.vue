@@ -152,18 +152,15 @@ export default {
   },
   methods: {
     getRandomGirl() {
-      console.log('here')
       useJwt.getRandomGirl()
         .then(response => {
-          console.log('respose--->', response.data)
           this.randomGirls = response.data
-          console.log(this.randomGirls)
         })
     },
     getLikedGirls() {
       useJwt.getLikedGirls()
         .then(response => {
-          this.likedGirls = response.data.map(item => item.id)
+          this.likedGirls = response.data
         })
     },
     create_chat(girlId) {

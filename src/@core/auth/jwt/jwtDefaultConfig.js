@@ -31,6 +31,7 @@ export default {
   pushChatEndpoint: 'http://singelsajten.se:8000/api/chat/push-chat/',
   startMessage: 'http://singelsajten.se:8000/api/chat/message/',
   inactiveChatEndpoint: 'http://singelsajten.se:8000/api/chat/inactive/',
+  revenueEndpoint: 'http://singelsajten.se:8000/api/moderator/revenue/',
   // This will be prefixed in authorization header with token
   // e.g. Authorization: Bearer <token>
   tokenType: 'Token',

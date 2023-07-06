@@ -33,6 +33,7 @@ export default {
       })
     },
     sendMessage(ctx, { contactId, message, senderId }) {
+      console.log()
       return new Promise((resolve, reject) => {
         axios
           .post(`${API_BASE_URL}/apps/chat/chats/${contactId}`, { message, senderId })

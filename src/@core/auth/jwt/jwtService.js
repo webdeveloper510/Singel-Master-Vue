@@ -218,6 +218,10 @@ export default class JwtService {
     return this.axiosIns.post(this.jwtConfig.updateCoinEndpoint)
   }
 
+  sendMessage(...args) {
+    return this.axiosIns.post(this.jwtConfig.createChatEndpoint, ...args)
+  }
+
   getAffiliateList(type, moderator = '') {
     return this.axiosIns.get(`${this.jwtConfig.affiliateEndpoint}?type=${type}&moderator=${moderator}`)
   }
