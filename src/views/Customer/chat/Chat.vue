@@ -67,7 +67,7 @@
           class="user-chats scroll-area"
         >
           <chat-log
-            :chat-data="activeChat.valaue"
+            :chat-data="activeChat"
             :profile-user-avatar="profileUserDataMinimal.avatar"
           />
         </vue-perfect-scrollbar>
@@ -260,6 +260,7 @@ export default {
     const fetchChatAndContacts = () => {
       store.dispatch('app-chat/fetchChatsAndContacts')
         .then(response => {
+          console.log(response.data, '=============>response.data in lobby')
           chatsContacts.value = response.data
         })
         .catch(error => console.error(error))
@@ -278,8 +279,8 @@ export default {
 
       store.dispatch('app-chat/getChat', { chatId })
         .then(response => {
+          console.log(response, '<-------------------------------')
           activeChat.value = response.data
-          console.log(activeChat.value, '<-------------------------------')
           // Set unseenMsgs to 0
           const contact = chatsContacts.value.find(c => c.id === chatId)
           if (contact) contact.unseenMsgs = 0
@@ -330,7 +331,7 @@ export default {
         alert('coin error')
         return
       }
-
+      console.log('activechat--------------->', activeChat)
       const payload = {
         command: 'new_message',
         tag: 'text',
@@ -342,7 +343,8 @@ export default {
         },
         senderType: 'user',
         chatId: activeChat.value.id,
-        senderId: activeChat.value.customer.id,
+        customer: activeChat.value.customer.id,
+        girl: activeChat.value.girl.id,
       }
       console.log(JSON.stringify(payload))
       if (mySocket) {
@@ -355,7 +357,7 @@ export default {
           console.log(mySocket)
           useJwt.updateCoin()
             .then(result => {
-              console.log(result.data)
+              console.log('here ----------->', JSON.stringify(payload))
               store.commit('appConfig/UPDATE_USERDATA', result.data)
               const userData = result.data
               userData.ability = [
@@ -365,17 +367,18 @@ export default {
                 },
               ]
               localStorage.setItem('userData', JSON.stringify(userData))
-            })
-          useJwt.sendMessage(JSON.stringify(payload))
-            .then(result => {
-              console.log(result)
+              console.log('here *****%%%%*****----------->', JSON.stringify(payload))
+              useJwt.sendMessage(JSON.stringify(payload))
+                .then(result2 => {
+                  console.log('result------>', result2.data)
+                })
             })
         }
       }
 
       const payload1 = {
         command: 'send_notification',
-        content: 'remove-lobby',
+        content: payload,
       }
       lobbySocket.value.send(
         JSON.stringify(payload1),
@@ -403,10 +406,13 @@ export default {
       const data = JSON.parse(e.data)
 
       const { command, content } = data
+      console.log(data, 'data========================================>')
+
       if (command === 'send_notification') {
         if (content.chatId) {
-          if (content.senderType === 'model') {
+          if (content.senderType === 'user') {
             const contact = chatsContacts.value.find(c => c.id === content.chatId)
+            console.log(contact, '-------------------------> contact')
             if (contact) contact.unseenMsgs += 1
           }
         }

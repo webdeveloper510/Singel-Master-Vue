@@ -71,6 +71,7 @@ export default {
   },
   setup(props) {
     const index1 = ref(null)
+    console.log(props.chatData, '=========> props chat data')
     const formattedChatData = computed(() => {
       const contact = {
         id: props.chatData.girl.id,
@@ -92,6 +93,7 @@ export default {
       const images = ref([])
       let imageIndex = -1
       chatLog.forEach((msg, index) => {
+        console.log('chat data message 1------------>', JSON.parse(JSON.stringify(msg.content)))
         if (msg.tag === 'file') {
           images.value.push(msg.file_url)
           imageIndex += 1

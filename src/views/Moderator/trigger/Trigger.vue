@@ -206,7 +206,7 @@ export default {
           console.log(response.data)
           this.$router.push({ name: 'moderator-chat', params: { chat_id: response.data.id } })
         }).catch(error => {
-          console.log(error)
+          console.log(error, '============================> error')
         })
     },
   },

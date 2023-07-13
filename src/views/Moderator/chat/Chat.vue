@@ -336,6 +336,7 @@ export default {
       store.dispatch('app-chat/fetchChatsAndContacts')
         .then(response => {
           chatsContacts.value = response.data
+          console.log('chat contacts vlaues ---->', chatsContacts.value)
         })
     }
 
@@ -365,8 +366,8 @@ export default {
           console.log(activeChat.value)
           if (activeChat.value.status === 'assign') {
             if (activeChat.value.assigned_moderator) {
+              console.log(activeChat.value.assigned_moderator.id, profileUserDataMinimal.value.id, '===========================---->')
               if (activeChat.value.assigned_moderator.id !== profileUserDataMinimal.value.id) {
-                alert('You have not permission!')
                 router.push({ name: 'moderator-lobby' })
               }
             }
