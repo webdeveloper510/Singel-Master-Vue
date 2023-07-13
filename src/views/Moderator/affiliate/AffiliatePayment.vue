@@ -27,6 +27,10 @@
       <input type="date" v-model="filters.toDate" placeholder="To">
     </div>
     <button type="button" class="btn btn btn-gradient-primary" @click="OnChange()">Search</button>
+    <div class="sales-btns d-flex">
+      <button>Sales</button>
+      <button>Net</button>
+    </div>
   </div>
   <b-table
       :fields="fields"
@@ -61,7 +65,11 @@
 </template>
 <style>
   .filters {
-    padding-bottom: 5rem !important;
+    padding-bottom: 3rem !important;
+    padding-top: 3rem !important;
+    border: 1px solid #fff;
+    margin-bottom: 4em;
+    position: relative;
   }
   .filters input[type=checkbox] {
       position: relative;
@@ -104,9 +112,41 @@
     left: 6px;
     border-radius: 50%;
   }
+
   .filters label {
-    font-size: 18px;
-  }Affiliate Lis
+    font-size: 1vw;
+  }
+
+  .filters .sales-btns {
+    position: absolute;
+    width: fit-content;
+    bottom: -28px;
+    background: #253145;
+    z-index: 2;
+    padding: 13px 54px;
+  }
+
+  .filters .sales-btns button {
+    background: #fff;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 6px 10px;
+    min-width: 80px;
+  }
+
+  .filters .sales-btns button:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .input-container {
+    max-width: 115px;
+  }
+
+  .input-container input {
+    max-width: 115px;
+  }
 
   .filters input[type=date] {
     background: none;
